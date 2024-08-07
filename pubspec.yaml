@@ -1,0 +1,23 @@
+name: pulsar_sdk_dart
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.4.4
+
+# Add regular dependencies here.
+dependencies:
+  encrypt: ^5.0.3
+  http: ^1.2.2
+  pointycastle: ^3.9.1
+  web_socket: ^0.1.6
+  json_annotation: ^4.9.0  # # a package containing annotations for json_serializable
+  freezed_annotation: ^2.4.4  # a package containing annotations for freezed
+
+dev_dependencies:
+  build_runner: ^2.4.11 # the tool to run code-generators
+  json_serializable: ^6.8.0 # # the code generator
+  freezed: ^2.5.7  # the code generator
+  lints: ^3.0.0
+  test: ^1.24.0
