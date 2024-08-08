@@ -932,7 +932,7 @@ class PaginatedProtocols with _$PaginatedProtocols {
 @freezed
 class WalletRequestSettings with _$WalletRequestSettings {
   @JsonSerializable(explicitToJson: true)
-  const factory WalletRequestSettings({
+  factory WalletRequestSettings({
     @JsonKey(name: 'ignore_cache') @Default(false) bool ignoreCache,
     @JsonKey(name: 'ignore_empty_wallet_cache')
     @Default(false)

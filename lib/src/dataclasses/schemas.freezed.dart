@@ -15975,7 +15975,7 @@ class __$$WalletRequestSettingsImplCopyWithImpl<$Res>
 
 @JsonSerializable(explicitToJson: true)
 class _$WalletRequestSettingsImpl implements _WalletRequestSettings {
-  const _$WalletRequestSettingsImpl(
+  _$WalletRequestSettingsImpl(
       {@JsonKey(name: 'ignore_cache') this.ignoreCache = false,
       @JsonKey(name: 'ignore_empty_wallet_cache')
       this.ignoreEmptyWalletCache = false,
@@ -16095,7 +16095,7 @@ class _$WalletRequestSettingsImpl implements _WalletRequestSettings {
 }
 
 abstract class _WalletRequestSettings implements WalletRequestSettings {
-  const factory _WalletRequestSettings(
+  factory _WalletRequestSettings(
       {@JsonKey(name: 'ignore_cache') final bool ignoreCache,
       @JsonKey(name: 'ignore_empty_wallet_cache')
       final bool ignoreEmptyWalletCache,

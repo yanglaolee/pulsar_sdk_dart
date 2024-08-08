@@ -1,97 +1,92 @@
-// Data Interface
-class Data {
-  final String address;
-  final String chain;
 
-  Data({
-    required this.address,
-    required this.chain,
-  });
-}
+// ignore_for_file: invalid_annotation_target
+
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part 'types.freezed.dart';
+part 'types.g.dart';
+
+// Data Interface
+sealed class Data {}
 
 // WalletBalancesData Interface
-class WalletBalancesData extends Data {
-  final bool ignoreCache;
-  final Set<String> hideNfts;
-  final Set<String> hideTokens;
-  final Set<String> hideIntegrations;
-  final bool fetchNfts;
-  final bool fetchTokens;
-  final bool fetchIntegrations;
+@freezed
+class WalletBalancesData extends Data with _$WalletBalancesData {
+  @JsonSerializable(explicitToJson: true)
+  const factory WalletBalancesData({
+    required String address,
+    required String chain,
+    @JsonKey(name: 'ignore_cache') @Default(false) bool ignoreCache,
+    @JsonKey(name: 'hide_nfts') @Default(<String>{}) Set<String> hideNFTs,
+    @JsonKey(name: 'hide_tokens') @Default(<String>{}) Set<String> hideTokens,
+    @JsonKey(name: 'hide_integrations') @Default(<String>{}) Set<String> hideIntegrations,
+    @JsonKey(name: 'fetch_nfts') @Default(true) bool fetchNFTs,
+    @JsonKey(name: 'fetch_tokens') @Default(true) bool fetchTokens,
+    @JsonKey(name: 'fetch_integrations') @Default(true) bool fetchIntegrations,
+  }) = _WalletBalancesData;
 
-  WalletBalancesData({
-    required super.address,
-    required super.chain,
-    this.ignoreCache = false,
-    Set<String>? hideNfts,
-    Set<String>? hideTokens,
-    Set<String>? hideIntegrations,
-    this.fetchNfts = true,
-    this.fetchTokens = true,
-    this.fetchIntegrations = true,
-  })  : hideNfts = hideNfts ?? {},
-        hideTokens = hideTokens ?? {},
-        hideIntegrations = hideIntegrations ?? {};
+  factory WalletBalancesData.fromJson(Map<String, dynamic> json) => _$WalletBalancesDataFromJson(json);
 }
 
 // TimeseriesData Interface
-class TimeseriesData extends Data {
-  final String tier;
+@freezed
+class TimeseriesData extends Data with _$TimeseriesData {
+  @JsonSerializable(explicitToJson: true)
+  const factory TimeseriesData({
+    required String address,
+    required String chain,
+    required String tier,
+  }) = _TimeseriesData;
 
-  TimeseriesData({
-    required super.address,
-    required super.chain,
-    required this.tier,
-  });
+  factory TimeseriesData.fromJson(Map<String, dynamic> json) => _$TimeseriesDataFromJson(json);
 }
-
 // Command Interface
-class WalletBalancesCommand {
-  final String key = "WALLET_BALANCES";
-  final WalletBalancesData data;
+@freezed
+class WalletBalancesCommand with _$WalletBalancesCommand {
+  @JsonSerializable(explicitToJson: true)
+  const factory WalletBalancesCommand({
+    @Default("WALLET_BALANCES") String key,
+    required WalletBalancesData data,
+  }) = _WalletBalancesCommand;
 
-  WalletBalancesCommand({
-    required this.data,
-  });
+  factory WalletBalancesCommand.fromJson(Map<String, dynamic> json) => _$WalletBalancesCommandFromJson(json);
 }
 
-class TimeseriesCommand {
-  final String key = "GET_WALLET_TIMESERIES";
-  final TimeseriesData data;
+@freezed
+class TimeseriesCommand with _$TimeseriesCommand {
+  @JsonSerializable(explicitToJson: true)
+  const factory TimeseriesCommand({
+    @Default("GET_WALLET_TIMESERIES") String key,
+    required TimeseriesData data,
+  }) = _TimeseriesCommand;
 
-  TimeseriesCommand({
-    required this.data,
-  });
+  factory TimeseriesCommand.fromJson(Map<String, dynamic> json) => _$TimeseriesCommandFromJson(json);
 }
 
 // Message Interface
-class Message {
-  final String method;
-  final String requestId;
-
-  Message({
-    required this.method,
-    required this.requestId,
-  });
-}
+sealed class Message {}
 
 // Specific Message Types
-class BalancesMessage extends Message {
-  final WalletBalancesCommand command;
+@freezed
+class BalancesMessage extends Message with _$BalancesMessage {
+  @JsonSerializable(explicitToJson: true)
+  const factory BalancesMessage({
+    required String method,
+    @JsonKey(name: 'request_id') required String requestId,
+    required WalletBalancesCommand command,
+  }) = _BalancesMessage;
 
-  BalancesMessage({
-    required super.method,
-    required super.requestId,
-    required this.command,
-  });
+  factory BalancesMessage.fromJson(Map<String, dynamic> json) => _$BalancesMessageFromJson(json);
 }
 
-class TimeseriesMessage extends Message {
-  final TimeseriesCommand command;
+@freezed
+class TimeseriesMessage extends Message with _$TimeseriesMessage {
+  @JsonSerializable(explicitToJson: true)
+  const factory TimeseriesMessage({
+    required String method,
+    @JsonKey(name: 'request_id') required String requestId,
+    required TimeseriesCommand command,
+  }) = _TimeseriesMessage;
 
-  TimeseriesMessage({
-    required super.method,
-    required super.requestId,
-    required this.command,
-  });
+  factory TimeseriesMessage.fromJson(Map<String, dynamic> json) => _$TimeseriesMessageFromJson(json);
 }
