@@ -5,6 +5,7 @@ import 'rest/tokens.dart';
 import 'rest/wallets.dart';
 import 'rest/protocols.dart';
 import 'rest/name_service.dart';
+import 'websocket/balances.dart';
 
 class PulsarSDK {
   final NFTRestClient nfts;
@@ -12,7 +13,7 @@ class PulsarSDK {
   final WalletRestClient wallets;
   final ProtocolRestClient protocols;
   final NameServiceRestClient nameService;
-  // final WalletBalancesClient balances;  // TODO
+  final WalletBalancesClient balances;  
 
   final String REST_API_URL;
   final String WS_API_URL;
@@ -24,11 +25,12 @@ class PulsarSDK {
     required this.tokens,
     required this.wallets,
     required this.protocols,
-    required this.nameService
+    required this.nameService,
+    required this.balances,
   });
 
   factory PulsarSDK({required String apiKey, String? baseUrl, bool useSSL = true}) {
-      final url = baseUrl ?? 'alpha-api.pulsar.finance';
+      final url = baseUrl ?? 'qa-api.pulsar.finance';
       final protocol = useSSL ? 'https' : 'http';
       final wsProtocol = useSSL ? 'wss' : 'ws';
 
@@ -36,7 +38,7 @@ class PulsarSDK {
       final wsUrl = '$wsProtocol://$url/v1/thirdparty/ws';
   
       final headers = {
-        // 'Content-Type': 'application/json',
+        'Content-type': 'application/json',
         'Authorization': 'Bearer $apiKey',
       };
   
@@ -52,7 +54,7 @@ class PulsarSDK {
         nameService: NameServiceRestClient(baseUrl: restUrl, headers: headers),
 
         // Websocket Clients
-        // balances: WalletBalancesClient(baseUrl: wsUrl, apiKey: apiKey),
+        balances: WalletBalancesClient(baseUrl: wsUrl, apiKey: apiKey),
       );
     }
 

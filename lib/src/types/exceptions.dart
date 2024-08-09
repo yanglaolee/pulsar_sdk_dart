@@ -15,7 +15,7 @@ class EncodedUrlError implements Exception {
   EncodedUrlError(this.message);
 
   @override
-  String toString() => 'WrongResponseFormat: $message';
+  String toString() => 'EncodedUrlError: $message';
 }
 
 class WebSocketClosed implements Exception {

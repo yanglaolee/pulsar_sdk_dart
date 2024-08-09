@@ -49,7 +49,7 @@ class NFTRestClient extends PulsarRestClient {
   }) async {
     try {
       final response = await call(
-        '/nft/collections/$collectionId',
+        '/nfts/collections/$collectionId',
         'GET',
       );
       return NFTCollection.fromJson(response);
@@ -60,7 +60,7 @@ class NFTRestClient extends PulsarRestClient {
 
   Future<NFTCollection> fetchCollectionbyAddress({
     required String collectionAddress,
-    required String chain,
+    required ChainKeys chain,
   }) async {
     try {
       final response = await call(
@@ -90,7 +90,7 @@ class NFTRestClient extends PulsarRestClient {
 
   Future<NFTItem> fetchNFTbyAddress({
     required String collectionAddress,
-    required String chain,
+    required ChainKeys chain,
     required String tokenId,
   }) async {
     try {

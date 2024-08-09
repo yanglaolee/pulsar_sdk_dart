@@ -1,0 +1,74 @@
+{
+    "id": "STARGAZE__stars19jq6mj84cnt9p7sagjxqf8hxtczwc8wlpuwe4sh62w45aheseues57n420",
+    "address": "stars19jq6mj84cnt9p7sagjxqf8hxtczwc8wlpuwe4sh62w45aheseues57n420",
+    "chain": "STARGAZE",
+    "marketplaces": [
+      {
+        "indexer_id": "stargaze",
+        "slug_id": "stars19jq6mj84cnt9p7sagjxqf8hxtczwc8wlpuwe4sh62w45aheseues57n420",
+        "url": "https://www.stargaze.zone/marketplace/stars19jq6mj84cnt9p7sagjxqf8hxtczwc8wlpuwe4sh62w45aheseues57n420",
+        "marketplace_id": "stargaze"
+      },
+      {
+        "indexer_id": "tfm_stargaze",
+        "slug_id": null,
+        "url": "https://tfm.com/nft/collections/stars19jq6mj84cnt9p7sagjxqf8hxtczwc8wlpuwe4sh62w45aheseues57n420/items",
+        "marketplace_id": "tfm"
+      }
+    ],
+    "number_of_assets": 9999,
+    "number_of_owners": 5745,
+    "available_traits": [
+      "accessory",
+      "age",
+      "badness",
+      "body",
+      "brains",
+      "clothes",
+      "eyes",
+      "hair",
+      "mouth",
+      "muscles",
+      "nose",
+      "paper color",
+      "paper texture",
+      "skin"
+    ],
+    "token": {
+      "name": "Stargaze",
+      "denom": "STARS",
+      "id": "6536aae97228f5b310f281c0",
+      "display_id": "6536aae97228f5b310f281c0",
+      "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/tokens/Stargaze.png",
+      "latest_price": "0.0083699310082221",
+      "price_24h_change": null,
+      "chain_properties": null
+    },
+    "last_24h_change": "13396.0",
+    "last_24h_change_percentage": "9.263920776742",
+    "name": "Bad Kids",
+    "avatar": "https://ipfs-gw.stargaze-apis.com/ipfs/QmSFc8TPuVwLUfxEov7s66rfKoJ75NRcBRC4uQjMRcJoZ9/badkids.jpg",
+    "banner": null,
+    "description": "Bad Kids is a collection of 9,999 bad drawings of bad kids",
+    "volume": "7556066.0",
+    "volume_usd": "63975.19135166205",
+    "average_price": null,
+    "floor_price": "158000.0",
+    "floor_price_usd": "1337.743772164325",
+    "market_cap": "1579842000.0",
+    "market_cap_usd": "13376099.977871086",
+    "stats": {
+      "price_timeseries": {
+        "1722643200": 135000,
+        "1722729600": 139750,
+        "1722816000": 139000,
+        "1722902400": 138860,
+        "1722988800": 138860,
+        "1723075200": 144604,
+        "1723161600": 158000
+      }
+    },
+    "low_volume": false,
+    "unknown_volume": false,
+    "is_fully_index": true
+  }

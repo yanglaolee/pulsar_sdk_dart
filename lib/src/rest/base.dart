@@ -4,11 +4,6 @@ import 'package:http/http.dart' as http;
 import 'encode.dart';
 import '../types/exceptions.dart';
 
-const defaultBaseUrl = 'http://localhost:8080';
-const defaultHeaders = {
-  'Content-Type': 'application/json',
-};
-
 class PulsarRestClient {
   String baseUrl;
   Map<String, String> headers;
@@ -26,12 +21,12 @@ class PulsarRestClient {
   ///     queryParams (Map<String, dynamic>?): Key-value pairs to include as path or query parameters in the request URL.
   ///
   /// Returns:
-  ///     Future<Map<String, dynamic>>: The JSON response body as a Map<String, dynamic>.
+  ///     Future<Map<String, dynamic>>: The JSON response body as a Map<String, dynamic>/List<dynamic>.
   ///
   /// Throws:
   ///     HTTPError: If the response from the API endpoint indicates an error status code (e.g. 4xx or 5xx).
   ///
-  Future<Map<String, dynamic>> call(String path, String httpMethod,
+  Future<dynamic> call(String path, String httpMethod,
       {Map<String, dynamic>? requestBody,
       Map<String, dynamic>? queryParams}) async {
     requestBody ??= {};
@@ -63,7 +58,7 @@ class PulsarRestClient {
       encodedParams = encodeParamsToUrlValue(queryParams);
       fullPath = fullPath + (encodedParams != null ? '?$encodedParams' : '');
     } catch (e) {
-      throw EncodedUrlError('\n can not encode params: $params.\n $e');
+      throw EncodedUrlError('\n can not encode params to url: $queryParams.\n $e');
     }
 
     print(fullPath);
@@ -80,7 +75,7 @@ class PulsarRestClient {
 
       if (respCode >= 400 && respCode < 600) {
         final error = respBody['error'];
-        throw APIError(message: error ?? respBody, statusCode: respCode);
+        throw APIError(message: error ?? respBody.toString(), statusCode: respCode);
       }
       return respBody;
 

@@ -3,11 +3,13 @@
 /// More dartdocs go here.
 library;
 
-export 'src/helper.dart';
+export 'src/pulsar_sdk.dart';
 
-// types
-export 'src/types/constants.dart';
-export 'src/types/exceptions.dart';
 export 'src/types/enums.dart';
+export 'src/types/exceptions.dart';
+
+export 'src/dataclasses/schemas.dart';
+
+export 'src/websocket/types.dart';
 
 

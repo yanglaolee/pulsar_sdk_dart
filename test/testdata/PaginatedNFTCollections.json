@@ -1,0 +1,669 @@
+{
+    "response": [
+      {
+        "id": "STARGAZE__stars1k8qtljae5qxyxp9lznu2jauxpljrc4qwyl3ymy6gn5tf56ckgfdsh9ds3r",
+        "address": "stars1k8qtljae5qxyxp9lznu2jauxpljrc4qwyl3ymy6gn5tf56ckgfdsh9ds3r",
+        "chain": "STARGAZE",
+        "marketplaces": [
+          {
+            "indexer_id": "stargaze",
+            "slug_id": "stars1k8qtljae5qxyxp9lznu2jauxpljrc4qwyl3ymy6gn5tf56ckgfdsh9ds3r",
+            "url": "https://www.stargaze.zone/marketplace/stars1k8qtljae5qxyxp9lznu2jauxpljrc4qwyl3ymy6gn5tf56ckgfdsh9ds3r",
+            "marketplace_id": "stargaze"
+          },
+          {
+            "indexer_id": "tfm_stargaze",
+            "slug_id": null,
+            "url": "https://tfm.com/nft/collections/stars1k8qtljae5qxyxp9lznu2jauxpljrc4qwyl3ymy6gn5tf56ckgfdsh9ds3r/items",
+            "marketplace_id": "tfm"
+          }
+        ],
+        "number_of_assets": 333,
+        "number_of_owners": 265,
+        "available_traits": [
+          "Armour Type",
+          "Behaviour",
+          "Galaxy Identity",
+          "Image Size",
+          "Model"
+        ],
+        "token": {
+          "name": "Stargaze",
+          "denom": "STARS",
+          "id": "6536aae97228f5b310f281c0",
+          "display_id": "6536aae97228f5b310f281c0",
+          "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/tokens/Stargaze.png",
+          "latest_price": "0.008468857809448505",
+          "price_24h_change": null,
+          "chain_properties": null
+        },
+        "last_24h_change": "0",
+        "last_24h_change_percentage": "0",
+        "name": "Royal Heroes",
+        "avatar": "https://ipfs-gw.stargaze-apis.com/ipfs/bafybeia4b452rsa2aqxsiagx2lfcs2askappuqozst2gvdx2nmls6m4xwm/images/0.gif",
+        "banner": null,
+        "description": "Royal Heroes is an NFT Series of armoured Super Hero Puppies ready to defend our universe from intruders",
+        "volume": "5.0",
+        "volume_usd": "0.042333663676086236",
+        "average_price": null,
+        "floor_price": "18.0",
+        "floor_price_usd": "0.15240118923391047",
+        "market_cap": "5994.0",
+        "market_cap_usd": "50.749596014892184",
+        "stats": {
+          "price_timeseries": {
+            "1722729600": 25,
+            "1722816000": 25,
+            "1722902400": 25,
+            "1722988800": 18,
+            "1723075200": 18,
+            "1723161600": 18,
+            "1723248000": 18
+          }
+        },
+        "low_volume": true,
+        "unknown_volume": false,
+        "is_fully_index": true
+      },
+      {
+        "id": "STARGAZE__stars149vp4zj37f5mzcq8ktr9wqclwxrnslrtzj5u0j6lzjdtsd2whexqrp24z9",
+        "address": "stars149vp4zj37f5mzcq8ktr9wqclwxrnslrtzj5u0j6lzjdtsd2whexqrp24z9",
+        "chain": "STARGAZE",
+        "marketplaces": [
+          {
+            "indexer_id": "stargaze",
+            "slug_id": "stars149vp4zj37f5mzcq8ktr9wqclwxrnslrtzj5u0j6lzjdtsd2whexqrp24z9",
+            "url": "https://www.stargaze.zone/marketplace/stars149vp4zj37f5mzcq8ktr9wqclwxrnslrtzj5u0j6lzjdtsd2whexqrp24z9",
+            "marketplace_id": "stargaze"
+          },
+          {
+            "indexer_id": "tfm_stargaze",
+            "slug_id": null,
+            "url": "https://tfm.com/nft/collections/stars149vp4zj37f5mzcq8ktr9wqclwxrnslrtzj5u0j6lzjdtsd2whexqrp24z9/items",
+            "marketplace_id": "tfm"
+          }
+        ],
+        "number_of_assets": 0,
+        "number_of_owners": 135,
+        "available_traits": [
+          "Aspect Ratio",
+          "Collection",
+          "Model",
+          "Seed"
+        ],
+        "token": {
+          "name": "Stargaze",
+          "denom": "STARS",
+          "id": "6536aae97228f5b310f281c0",
+          "display_id": "6536aae97228f5b310f281c0",
+          "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/tokens/Stargaze.png",
+          "latest_price": "0.008468857809448505",
+          "price_24h_change": null,
+          "chain_properties": null
+        },
+        "last_24h_change": "0",
+        "last_24h_change_percentage": "0",
+        "name": "The Lab",
+        "avatar": "https://ipfs-gw.stargaze-apis.com/ipfs/bafybeibdzh6rzfqwjmk4wdwqr7mmdi57jp44olva5u2qpyqbkqgrfihygy",
+        "banner": null,
+        "description": "Renders from artists of the PS Labs community",
+        "volume": "5.0",
+        "volume_usd": "0.03967374806813137",
+        "average_price": null,
+        "floor_price": "150.0",
+        "floor_price_usd": "1.190212442043941",
+        "market_cap": null,
+        "market_cap_usd": null,
+        "stats": {
+          "price_timeseries": {
+            "1722643200": 150,
+            "1722729600": 150,
+            "1722816000": 150,
+            "1722902400": 150,
+            "1722988800": 150,
+            "1723075200": 150,
+            "1723161600": 150
+          }
+        },
+        "low_volume": true,
+        "unknown_volume": false,
+        "is_fully_index": true
+      },
+      {
+        "id": "STARGAZE__stars1ket376u2fkryqjwgwc72kpe52u486ng32eh4nhntl0dzu7vzenpsqys3lh",
+        "address": "stars1ket376u2fkryqjwgwc72kpe52u486ng32eh4nhntl0dzu7vzenpsqys3lh",
+        "chain": "STARGAZE",
+        "marketplaces": [
+          {
+            "indexer_id": "stargaze",
+            "slug_id": "stars1ket376u2fkryqjwgwc72kpe52u486ng32eh4nhntl0dzu7vzenpsqys3lh",
+            "url": "https://www.stargaze.zone/marketplace/stars1ket376u2fkryqjwgwc72kpe52u486ng32eh4nhntl0dzu7vzenpsqys3lh",
+            "marketplace_id": "stargaze"
+          },
+          {
+            "indexer_id": "tfm_stargaze",
+            "slug_id": null,
+            "url": "https://tfm.com/nft/collections/stars1ket376u2fkryqjwgwc72kpe52u486ng32eh4nhntl0dzu7vzenpsqys3lh/items",
+            "marketplace_id": "tfm"
+          }
+        ],
+        "number_of_assets": 6941,
+        "number_of_owners": 486,
+        "available_traits": [
+          "Accessories",
+          "BG",
+          "Body",
+          "Eyes",
+          "Tooth"
+        ],
+        "token": {
+          "name": "Stargaze",
+          "denom": "STARS",
+          "id": "6536aae97228f5b310f281c0",
+          "display_id": "6536aae97228f5b310f281c0",
+          "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/tokens/Stargaze.png",
+          "latest_price": "0.008468857809448505",
+          "price_24h_change": null,
+          "chain_properties": null
+        },
+        "last_24h_change": "0",
+        "last_24h_change_percentage": "0",
+        "name": "Asgrim: the Zombie Chronicles",
+        "avatar": "https://ipfs-gw.stargaze-apis.com/ipfs/bafkreifeccgpy7ghsyby2zviw7qgccohjp4hmuqra7dsaigbueayipeime",
+        "banner": null,
+        "description": "“Asgrim: The Zombie Chronicles”, an exclusive NFT collection that brings to life the thrilling saga of Asgrim, a zombie with a story unlike any other.  In this unique NFT series, each token represents a pivotal moment in Asgrim’s journey.",
+        "volume": "5.0",
+        "volume_usd": "0.042333663676086236",
+        "average_price": null,
+        "floor_price": "10.0",
+        "floor_price_usd": "0.08466732735217247",
+        "market_cap": "99990.0",
+        "market_cap_usd": "846.5886061943726",
+        "stats": {
+          "price_timeseries": {
+            "1722643200": 10,
+            "1722729600": 10,
+            "1722816000": 10,
+            "1722902400": 10,
+            "1722988800": 10,
+            "1723075200": 10,
+            "1723161600": 10
+          }
+        },
+        "low_volume": true,
+        "unknown_volume": false,
+        "is_fully_index": true
+      },
+      {
+        "id": "STARGAZE__stars1dxfh0z7wn8u6xy0fwqrzphtfwfumc6sp5u3cynl5kpt94z79glrq7rkzcr",
+        "address": "stars1dxfh0z7wn8u6xy0fwqrzphtfwfumc6sp5u3cynl5kpt94z79glrq7rkzcr",
+        "chain": "STARGAZE",
+        "marketplaces": [
+          {
+            "indexer_id": "tfm_stargaze",
+            "slug_id": null,
+            "url": "https://tfm.com/nft/collections/stars1dxfh0z7wn8u6xy0fwqrzphtfwfumc6sp5u3cynl5kpt94z79glrq7rkzcr/items",
+            "marketplace_id": "tfm"
+          },
+          {
+            "indexer_id": "stargaze",
+            "slug_id": "stars1dxfh0z7wn8u6xy0fwqrzphtfwfumc6sp5u3cynl5kpt94z79glrq7rkzcr",
+            "url": "https://www.stargaze.zone/marketplace/stars1dxfh0z7wn8u6xy0fwqrzphtfwfumc6sp5u3cynl5kpt94z79glrq7rkzcr",
+            "marketplace_id": "stargaze"
+          }
+        ],
+        "number_of_assets": 860,
+        "number_of_owners": 283,
+        "available_traits": [
+          "Energy",
+          "Finishing Move",
+          "Personality",
+          "Power Level",
+          "Special Attack",
+          "Universe"
+        ],
+        "token": {
+          "name": "Stargaze",
+          "denom": "STARS",
+          "id": "6536aae97228f5b310f281c0",
+          "display_id": "6536aae97228f5b310f281c0",
+          "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/tokens/Stargaze.png",
+          "latest_price": "0.008468857809448505",
+          "price_24h_change": null,
+          "chain_properties": null
+        },
+        "last_24h_change": "0",
+        "last_24h_change_percentage": "0",
+        "name": "OVER 9000!!!",
+        "avatar": "https://ipfs-gw.stargaze-apis.com/ipfs/bafybeigbtpcjvwhglg3mthyhvwvv5mw56xvytij7j72alzvu53z3njh4kq",
+        "banner": null,
+        "description": "OVER 9000!!! is a collection of OVER 9,000 powerful young fighterz with god-like power levels ranging from OVER 9,000 to OVER 999,999,999,000!!!",
+        "volume": "5.0",
+        "volume_usd": "0.042333663676086236",
+        "average_price": null,
+        "floor_price": "40.0",
+        "floor_price_usd": "0.3386693094086899",
+        "market_cap": "399960.0",
+        "market_cap_usd": "3386.3544247774903",
+        "stats": {
+          "price_timeseries": {
+            "1722729600": 40,
+            "1722816000": 40,
+            "1722902400": 40,
+            "1722988800": 40,
+            "1723075200": 40,
+            "1723161600": 40,
+            "1723248000": 40
+          }
+        },
+        "low_volume": true,
+        "unknown_volume": false,
+        "is_fully_index": true
+      },
+      {
+        "id": "STARGAZE__stars1extrtvnza592d4uaupsflvxp4vry4kk225fn0aets9ckjlzpp34sj82wey",
+        "address": "stars1extrtvnza592d4uaupsflvxp4vry4kk225fn0aets9ckjlzpp34sj82wey",
+        "chain": "STARGAZE",
+        "marketplaces": [
+          {
+            "indexer_id": "tfm_stargaze",
+            "slug_id": null,
+            "url": "https://tfm.com/nft/collections/stars1extrtvnza592d4uaupsflvxp4vry4kk225fn0aets9ckjlzpp34sj82wey/items",
+            "marketplace_id": "tfm"
+          },
+          {
+            "indexer_id": "stargaze",
+            "slug_id": "stars1extrtvnza592d4uaupsflvxp4vry4kk225fn0aets9ckjlzpp34sj82wey",
+            "url": "https://www.stargaze.zone/marketplace/stars1extrtvnza592d4uaupsflvxp4vry4kk225fn0aets9ckjlzpp34sj82wey",
+            "marketplace_id": "stargaze"
+          }
+        ],
+        "number_of_assets": 1999,
+        "number_of_owners": 370,
+        "available_traits": [
+          "Background",
+          "Backside",
+          "Body",
+          "Head",
+          "Speciality"
+        ],
+        "token": {
+          "name": "Stargaze",
+          "denom": "STARS",
+          "id": "6536aae97228f5b310f281c0",
+          "display_id": "6536aae97228f5b310f281c0",
+          "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/tokens/Stargaze.png",
+          "latest_price": "0.008468857809448505",
+          "price_24h_change": null,
+          "chain_properties": null
+        },
+        "last_24h_change": "0",
+        "last_24h_change_percentage": "0",
+        "name": "Cosmic Guard",
+        "avatar": "https://ipfs-gw.stargaze-apis.com/ipfs/bafybeifkbbup4pmqb22ntxjdxs5uz2o5fcnqxdcso6b27c3e2uxgu75bme",
+        "banner": null,
+        "description": "An art collaboration between Artnesh and Picopops.",
+        "volume": "5.0",
+        "volume_usd": "0.042333663676086236",
+        "average_price": null,
+        "floor_price": "77.0",
+        "floor_price_usd": "0.651938420611728",
+        "market_cap": "153923.0",
+        "market_cap_usd": "1303.2249028028443",
+        "stats": {
+          "price_timeseries": {
+            "1722643200": 94,
+            "1722729600": 77,
+            "1722816000": 77,
+            "1722902400": 77,
+            "1722988800": 77,
+            "1723075200": 77,
+            "1723161600": 77
+          }
+        },
+        "low_volume": true,
+        "unknown_volume": false,
+        "is_fully_index": true
+      },
+      {
+        "id": "STARGAZE__stars1spkstth4kqxv9jzwhgt33kpkrl30p9hdrd4uvp7af7ph46ev0g5qpg04pf",
+        "address": "stars1spkstth4kqxv9jzwhgt33kpkrl30p9hdrd4uvp7af7ph46ev0g5qpg04pf",
+        "chain": "STARGAZE",
+        "marketplaces": [
+          {
+            "indexer_id": "stargaze",
+            "slug_id": "stars1spkstth4kqxv9jzwhgt33kpkrl30p9hdrd4uvp7af7ph46ev0g5qpg04pf",
+            "url": "https://www.stargaze.zone/marketplace/stars1spkstth4kqxv9jzwhgt33kpkrl30p9hdrd4uvp7af7ph46ev0g5qpg04pf",
+            "marketplace_id": "stargaze"
+          },
+          {
+            "indexer_id": "tfm_stargaze",
+            "slug_id": null,
+            "url": "https://tfm.com/nft/collections/stars1spkstth4kqxv9jzwhgt33kpkrl30p9hdrd4uvp7af7ph46ev0g5qpg04pf/items",
+            "marketplace_id": "tfm"
+          }
+        ],
+        "number_of_assets": 5555,
+        "number_of_owners": 715,
+        "available_traits": [
+          "Background",
+          "Base",
+          "Earring",
+          "Eyes",
+          "Headwear",
+          "Mouth",
+          "Outfit",
+          "Weapon"
+        ],
+        "token": {
+          "name": "Stargaze",
+          "denom": "STARS",
+          "id": "6536aae97228f5b310f281c0",
+          "display_id": "6536aae97228f5b310f281c0",
+          "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/tokens/Stargaze.png",
+          "latest_price": "0.008468857809448505",
+          "price_24h_change": null,
+          "chain_properties": null
+        },
+        "last_24h_change": "0",
+        "last_24h_change_percentage": "0",
+        "name": "HuaHua Mobsters",
+        "avatar": "https://ipfs-gw.stargaze-apis.com/ipfs/bafybeifvenfx2o4kenpphyaeayd7gbps56tviaobioe7yhkwqj56642ehy/images/5556.JPG",
+        "banner": null,
+        "description": "Join the formidable ranks of 5555 HuaHua mobsters, ready to safeguard and flex their muscle for the HuaHua chain. Become a HuaHua mobster member. We're all bite, and very little bark. HUA are you waiting for? LFG!!",
+        "volume": "5.0",
+        "volume_usd": "0.042333663676086236",
+        "average_price": null,
+        "floor_price": "20.0",
+        "floor_price_usd": "0.16933465470434494",
+        "market_cap": "111100.0",
+        "market_cap_usd": "940.6540068826362",
+        "stats": {
+          "price_timeseries": {
+            "1722643200": 20,
+            "1722729600": 20,
+            "1722816000": 20,
+            "1722902400": 20,
+            "1722988800": 20,
+            "1723075200": 20,
+            "1723161600": 20
+          }
+        },
+        "low_volume": true,
+        "unknown_volume": false,
+        "is_fully_index": true
+      },
+      {
+        "id": "STARGAZE__stars1k7pspxpe7kumtmayt488090y68w45k9ntv66uzsnhl76padpzhlqwmjpm8",
+        "address": "stars1k7pspxpe7kumtmayt488090y68w45k9ntv66uzsnhl76padpzhlqwmjpm8",
+        "chain": "STARGAZE",
+        "marketplaces": [
+          {
+            "indexer_id": "stargaze",
+            "slug_id": "stars1k7pspxpe7kumtmayt488090y68w45k9ntv66uzsnhl76padpzhlqwmjpm8",
+            "url": "https://www.stargaze.zone/marketplace/stars1k7pspxpe7kumtmayt488090y68w45k9ntv66uzsnhl76padpzhlqwmjpm8",
+            "marketplace_id": "stargaze"
+          },
+          {
+            "indexer_id": "tfm_stargaze",
+            "slug_id": null,
+            "url": "https://tfm.com/nft/collections/stars1k7pspxpe7kumtmayt488090y68w45k9ntv66uzsnhl76padpzhlqwmjpm8/items",
+            "marketplace_id": "tfm"
+          }
+        ],
+        "number_of_assets": 1376,
+        "number_of_owners": 209,
+        "available_traits": [
+          "Color Variance %",
+          "Hobo Power",
+          "Horsepower",
+          "Phonkability",
+          "WTF Volume"
+        ],
+        "token": {
+          "name": "Stargaze",
+          "denom": "STARS",
+          "id": "6536aae97228f5b310f281c0",
+          "display_id": "6536aae97228f5b310f281c0",
+          "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/tokens/Stargaze.png",
+          "latest_price": "0.008468857809448505",
+          "price_24h_change": null,
+          "chain_properties": null
+        },
+        "last_24h_change": "0",
+        "last_24h_change_percentage": "0",
+        "name": "Phonk Steamers",
+        "avatar": "https://ipfs-gw.stargaze-apis.com/ipfs/bafybeieevvem6sjq5mkh546cr4wbkl2uzqbukjo7gbxl5dom5sosn72wii/cover.gif",
+        "banner": null,
+        "description": "This retro-futuristic collection is the product of training an AI model to mix art genres.",
+        "volume": "5.0",
+        "volume_usd": "0.042333663676086236",
+        "average_price": null,
+        "floor_price": "20.0",
+        "floor_price_usd": "0.16933465470434494",
+        "market_cap": "27520.0",
+        "market_cap_usd": "233.00448487317865",
+        "stats": {
+          "price_timeseries": {
+            "1722643200": 20,
+            "1722729600": 20,
+            "1722816000": 20,
+            "1722902400": 20,
+            "1722988800": 20,
+            "1723075200": 20,
+            "1723161600": 20
+          }
+        },
+        "low_volume": true,
+        "unknown_volume": false,
+        "is_fully_index": true
+      },
+      {
+        "id": "STARGAZE__stars1qtfcsff339xyx5kh4mhtyuryjw5mrrj58sznk8z5e7k45wvpy0nsm9652m",
+        "address": "stars1qtfcsff339xyx5kh4mhtyuryjw5mrrj58sznk8z5e7k45wvpy0nsm9652m",
+        "chain": "STARGAZE",
+        "marketplaces": [
+          {
+            "indexer_id": "stargaze",
+            "slug_id": "stars1qtfcsff339xyx5kh4mhtyuryjw5mrrj58sznk8z5e7k45wvpy0nsm9652m",
+            "url": "https://www.stargaze.zone/marketplace/stars1qtfcsff339xyx5kh4mhtyuryjw5mrrj58sznk8z5e7k45wvpy0nsm9652m",
+            "marketplace_id": "stargaze"
+          },
+          {
+            "indexer_id": "tfm_stargaze",
+            "slug_id": null,
+            "url": "https://tfm.com/nft/collections/stars1qtfcsff339xyx5kh4mhtyuryjw5mrrj58sznk8z5e7k45wvpy0nsm9652m/items",
+            "marketplace_id": "tfm"
+          }
+        ],
+        "number_of_assets": 1500,
+        "number_of_owners": 280,
+        "available_traits": [
+          "Armor",
+          "Background",
+          "Hood",
+          "Mask",
+          "Race",
+          "Robes",
+          "Sword",
+          "eye",
+          "hair",
+          "head",
+          "mouth"
+        ],
+        "token": {
+          "name": "Stargaze",
+          "denom": "STARS",
+          "id": "6536aae97228f5b310f281c0",
+          "display_id": "6536aae97228f5b310f281c0",
+          "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/tokens/Stargaze.png",
+          "latest_price": "0.008468857809448505",
+          "price_24h_change": null,
+          "chain_properties": null
+        },
+        "last_24h_change": "0",
+        "last_24h_change_percentage": "0",
+        "name": "Asashin",
+        "avatar": "https://ipfs-gw.stargaze-apis.com/ipfs/bafybeic63yjusap4jntqdw72vfe63q3c5extk5neh3qfeecokwotolz2na/ezgif-7-f0a37af9c0.gif",
+        "banner": null,
+        "description": "Through the shadows we show you the light",
+        "volume": "5.0",
+        "volume_usd": "0.042333663676086236",
+        "average_price": null,
+        "floor_price": "5.0",
+        "floor_price_usd": "0.042333663676086236",
+        "market_cap": "7500.0",
+        "market_cap_usd": "63.500495514129355",
+        "stats": {
+          "price_timeseries": {
+            "1722643200": 5,
+            "1722729600": 5,
+            "1722816000": 5,
+            "1722902400": 5,
+            "1722988800": 5,
+            "1723075200": 5,
+            "1723161600": 5
+          }
+        },
+        "low_volume": false,
+        "unknown_volume": false,
+        "is_fully_index": true
+      },
+      {
+        "id": "STARGAZE__stars1xlaz0lpmgva7zrzh4sfhg04tet6cxnedrt6yrt640jn6pacr942sl325q6",
+        "address": "stars1xlaz0lpmgva7zrzh4sfhg04tet6cxnedrt6yrt640jn6pacr942sl325q6",
+        "chain": "STARGAZE",
+        "marketplaces": [
+          {
+            "indexer_id": "stargaze",
+            "slug_id": "stars1xlaz0lpmgva7zrzh4sfhg04tet6cxnedrt6yrt640jn6pacr942sl325q6",
+            "url": "https://www.stargaze.zone/marketplace/stars1xlaz0lpmgva7zrzh4sfhg04tet6cxnedrt6yrt640jn6pacr942sl325q6",
+            "marketplace_id": "stargaze"
+          },
+          {
+            "indexer_id": "tfm_stargaze",
+            "slug_id": null,
+            "url": "https://tfm.com/nft/collections/stars1xlaz0lpmgva7zrzh4sfhg04tet6cxnedrt6yrt640jn6pacr942sl325q6/items",
+            "marketplace_id": "tfm"
+          }
+        ],
+        "number_of_assets": 3636,
+        "number_of_owners": 980,
+        "available_traits": [
+          "background",
+          "burning date",
+          "eyes",
+          "faction",
+          "flames",
+          "mouth",
+          "pants",
+          "shoes",
+          "tshirt"
+        ],
+        "token": {
+          "name": "Stargaze",
+          "denom": "STARS",
+          "id": "6536aae97228f5b310f281c0",
+          "display_id": "6536aae97228f5b310f281c0",
+          "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/tokens/Stargaze.png",
+          "latest_price": "0.008468857809448505",
+          "price_24h_change": null,
+          "chain_properties": null
+        },
+        "last_24h_change": "0",
+        "last_24h_change_percentage": "0",
+        "name": "Burning Heads",
+        "avatar": "https://ipfs-gw.stargaze-apis.com/ipfs/bafybeigfuivzz2i3xcakad2562drfm6nqjlotoog5cbegxy3tbmuk54ybm/logo.png",
+        "banner": null,
+        "description": "The first collection that automatically reduces the supply",
+        "volume": "5.0",
+        "volume_usd": "0.042333663676086236",
+        "average_price": null,
+        "floor_price": "18.0",
+        "floor_price_usd": "0.15240118923391047",
+        "market_cap": "65448.0",
+        "market_cap_usd": "554.1307240544984",
+        "stats": {
+          "price_timeseries": {
+            "1722643200": 18,
+            "1722729600": 18,
+            "1722816000": 18,
+            "1722902400": 18,
+            "1722988800": 18,
+            "1723075200": 18,
+            "1723161600": 18
+          }
+        },
+        "low_volume": true,
+        "unknown_volume": false,
+        "is_fully_index": true
+      },
+      {
+        "id": "STARGAZE__stars1ewap9vzpg29rnr4fknxwyndgftk8jpanqaep2dn2r0gwauvsgc9q53kkwq",
+        "address": "stars1ewap9vzpg29rnr4fknxwyndgftk8jpanqaep2dn2r0gwauvsgc9q53kkwq",
+        "chain": "STARGAZE",
+        "marketplaces": [
+          {
+            "indexer_id": "stargaze",
+            "slug_id": "stars1ewap9vzpg29rnr4fknxwyndgftk8jpanqaep2dn2r0gwauvsgc9q53kkwq",
+            "url": "https://www.stargaze.zone/marketplace/stars1ewap9vzpg29rnr4fknxwyndgftk8jpanqaep2dn2r0gwauvsgc9q53kkwq",
+            "marketplace_id": "stargaze"
+          },
+          {
+            "indexer_id": "tfm_stargaze",
+            "slug_id": null,
+            "url": "https://tfm.com/nft/collections/stars1ewap9vzpg29rnr4fknxwyndgftk8jpanqaep2dn2r0gwauvsgc9q53kkwq/items",
+            "marketplace_id": "tfm"
+          }
+        ],
+        "number_of_assets": 5000,
+        "number_of_owners": 594,
+        "available_traits": [
+          "background",
+          "base",
+          "clothes",
+          "eye",
+          "headwear",
+          "mouth"
+        ],
+        "token": {
+          "name": "Stargaze",
+          "denom": "STARS",
+          "id": "6536aae97228f5b310f281c0",
+          "display_id": "6536aae97228f5b310f281c0",
+          "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/tokens/Stargaze.png",
+          "latest_price": "0.008468857809448505",
+          "price_24h_change": null,
+          "chain_properties": null
+        },
+        "last_24h_change": "0",
+        "last_24h_change_percentage": "0",
+        "name": "Bad Pixel Pepe",
+        "avatar": "https://ipfs-gw.stargaze-apis.com/ipfs/bafybeidcey2d42itizgcxz4hnxjkzpvbmpbfaqfzlwy2sb3lyt6oe4g4oa/images/5001.JPG",
+        "banner": null,
+        "description": "A slovenly, grumpy frog with a permanent scowl, Pepe the Puddle Jumper leaves behind slimy trails and spreads gloom wherever he hops.",
+        "volume": "5.0",
+        "volume_usd": "0.042333663676086236",
+        "average_price": null,
+        "floor_price": "5.0",
+        "floor_price_usd": "0.042333663676086236",
+        "market_cap": "25000.0",
+        "market_cap_usd": "211.6683183804312",
+        "stats": {
+          "price_timeseries": {
+            "1722643200": null,
+            "1722729600": 5,
+            "1722816000": 5,
+            "1722902400": 5,
+            "1722988800": 5,
+            "1723075200": 5,
+            "1723161600": 5
+          }
+        },
+        "low_volume": false,
+        "unknown_volume": false,
+        "is_fully_index": true
+      }
+    ],
+    "total": 477
+  }

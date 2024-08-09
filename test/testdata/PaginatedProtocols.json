@@ -1,0 +1,349 @@
+{
+    "response": [
+      {
+        "protocol": {
+          "key": "AQLA",
+          "name": "AQLA",
+          "chains": [
+            "KUJIRA"
+          ],
+          "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/protocols/AQLA.png",
+          "url": "https://aqla.app/stake",
+          "recipes": {
+            "KUJIRA": [
+              {
+                "key": "AQLA_STAKE_KUJIRA",
+                "name": "Stake",
+                "chain": "KUJIRA"
+              }
+            ]
+          },
+          "integration_types": [
+            "STAKING"
+          ],
+          "categories": null,
+          "tags": [],
+          "description": null,
+          "twitter_url": null,
+          "telegram_url": null
+        },
+        "stats": {
+          "total_tvl": "411088.39985963545",
+          "chain_tvl": {
+            "KUJIRA": "411088.39985963545"
+          },
+          "created_date": "1717701977"
+        }
+      },
+      {
+        "protocol": {
+          "key": "BLUE",
+          "name": "Blue",
+          "chains": [
+            "KUJIRA"
+          ],
+          "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png",
+          "url": "https://blue.kujira.app",
+          "recipes": {
+            "KUJIRA": [
+              {
+                "key": "KUJIRA_DEL_STAKE",
+                "name": "Kujira Delegation Stake",
+                "chain": "KUJIRA"
+              },
+              {
+                "key": "BLUE_USK_MINT_KUJIRA",
+                "name": "USK Mint",
+                "chain": "KUJIRA"
+              }
+            ]
+          },
+          "integration_types": [
+            "BORROW_AND_LENDING",
+            "STAKING"
+          ],
+          "categories": null,
+          "tags": [],
+          "description": null,
+          "twitter_url": null,
+          "telegram_url": null
+        },
+        "stats": {
+          "total_tvl": "23134810.2038575",
+          "chain_tvl": {
+            "KUJIRA": "23134810.2038575"
+          },
+          "created_date": "1698085419"
+        }
+      },
+      {
+        "protocol": {
+          "key": "BOW",
+          "name": "BOW",
+          "chains": [
+            "KUJIRA"
+          ],
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQijy_eJwVeDs63PjFA3aMZIJgOxfay4oLKokPDnQyv7KseAqZ4E2aAMP0Swmz-gT70msk&usqp=CAU",
+          "url": "https://bow.kujira.app",
+          "recipes": {
+            "KUJIRA": [
+              {
+                "key": "BOW_USK_MULTI_STAKE",
+                "name": "USK Multi-Staking",
+                "chain": "KUJIRA"
+              },
+              {
+                "key": "BOW_LIQUIDITY_POOLS_KUJIRA",
+                "name": "Kujira Bow Liquidity Pools",
+                "chain": "KUJIRA"
+              },
+              {
+                "key": "BOW_FARMS_KUJIRA",
+                "name": "Kujira Bow Farms",
+                "chain": "KUJIRA"
+              }
+            ]
+          },
+          "integration_types": [
+            "FARMING",
+            "LIQUIDITY_POOL"
+          ],
+          "categories": null,
+          "tags": [],
+          "description": null,
+          "twitter_url": null,
+          "telegram_url": null
+        },
+        "stats": {
+          "total_tvl": "8609042.438945448",
+          "chain_tvl": {
+            "KUJIRA": "8609042.438945448"
+          },
+          "created_date": "1698085413"
+        }
+      },
+      {
+        "protocol": {
+          "key": "FIN",
+          "name": "FIN",
+          "chains": [
+            "KUJIRA"
+          ],
+          "image": "https://fin.kujira.app/assets/kujira-round@3x.d75682e8.png",
+          "url": "https://fin.kujira.app/trade/kujira14hj2tavq8fpesdwxxcu44rty3hh90vhujrvcmstl4zr3txmfvw9sl4e867",
+          "recipes": {
+            "KUJIRA": [
+              {
+                "key": "FIN_LIMIT_ORDERS_KUJIRA",
+                "name": "Kujira Limit Orders",
+                "chain": "KUJIRA"
+              }
+            ]
+          },
+          "integration_types": [
+            "ORDER_BOOK"
+          ],
+          "categories": null,
+          "tags": [],
+          "description": null,
+          "twitter_url": null,
+          "telegram_url": null
+        },
+        "stats": {
+          "total_tvl": "0",
+          "chain_tvl": {},
+          "created_date": "1698085389"
+        }
+      },
+      {
+        "protocol": {
+          "key": "FUZION",
+          "name": "FUZION",
+          "chains": [
+            "KUJIRA"
+          ],
+          "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/protocols/fuzion.ico",
+          "url": "https://dashboard.fuzion.app",
+          "recipes": {
+            "KUJIRA": [
+              {
+                "key": "FUZION_LIMIT_ORDERS_KUJIRA",
+                "name": "Limit Orders",
+                "chain": "KUJIRA"
+              },
+              {
+                "key": "FUZION_YFZUN_STAKING",
+                "name": "YFuzn Stake",
+                "chain": "KUJIRA"
+              },
+              {
+                "key": "FUZION_FUZN_STAKING",
+                "name": "Fuzn Stake",
+                "chain": "KUJIRA"
+              }
+            ]
+          },
+          "integration_types": [
+            "FARMING",
+            "ORDER_BOOK",
+            "STAKING"
+          ],
+          "categories": null,
+          "tags": [],
+          "description": null,
+          "twitter_url": null,
+          "telegram_url": null
+        },
+        "stats": {
+          "total_tvl": "991670.1029182996",
+          "chain_tvl": {
+            "KUJIRA": "991670.1029182996"
+          },
+          "created_date": "1705498364"
+        }
+      },
+      {
+        "protocol": {
+          "key": "GHOST",
+          "name": "GHOST",
+          "chains": [
+            "KUJIRA"
+          ],
+          "image": "https://ghost.kujira.app/assets/favicon.bcdfeb74.png",
+          "url": "https://ghost.kujira.app/",
+          "recipes": {
+            "KUJIRA": [
+              {
+                "key": "GHOST_LEND_KUJIRA",
+                "name": "Ghost Lend",
+                "chain": "KUJIRA"
+              },
+              {
+                "key": "GHOST_BORROW_KUJIRA",
+                "name": "Ghost Borrow",
+                "chain": "KUJIRA"
+              }
+            ]
+          },
+          "integration_types": [
+            "BORROW_AND_LENDING",
+            "STAKING"
+          ],
+          "categories": null,
+          "tags": [],
+          "description": null,
+          "twitter_url": null,
+          "telegram_url": null
+        },
+        "stats": {
+          "total_tvl": "1629750.0351014363",
+          "chain_tvl": {
+            "KUJIRA": "1629750.0351014363"
+          },
+          "created_date": "1698085395"
+        }
+      },
+      {
+        "protocol": {
+          "key": "KUJIRA_ORCA",
+          "name": "KUJIRA ORCA",
+          "chains": [
+            "KUJIRA"
+          ],
+          "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/protocols/kujira_orca_logo.png",
+          "url": "https://orca.kujira.app/",
+          "recipes": {
+            "KUJIRA": [
+              {
+                "key": "KUJIRA_ORCA_LIQ_MARKET_V1",
+                "name": "Kujira Orca Liquidations Market",
+                "chain": "KUJIRA"
+              }
+            ]
+          },
+          "integration_types": [
+            "STAKING"
+          ],
+          "categories": null,
+          "tags": [],
+          "description": null,
+          "twitter_url": null,
+          "telegram_url": null
+        },
+        "stats": {
+          "total_tvl": "0",
+          "chain_tvl": {},
+          "created_date": "1698085418"
+        }
+      },
+      {
+        "protocol": {
+          "key": "MANTADAO",
+          "name": "MANTADAO",
+          "chains": [
+            "KUJIRA"
+          ],
+          "image": "https://mantadao.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogoicon.88d4ec2c.png&w=32&q=75",
+          "url": "https://mantadao.app/",
+          "recipes": {
+            "KUJIRA": [
+              {
+                "key": "MANTADAO_STAKE",
+                "name": "MantaDao Stake",
+                "chain": "KUJIRA"
+              }
+            ]
+          },
+          "integration_types": [
+            "STAKING"
+          ],
+          "categories": null,
+          "tags": [],
+          "description": null,
+          "twitter_url": null,
+          "telegram_url": null
+        },
+        "stats": {
+          "total_tvl": "0",
+          "chain_tvl": {},
+          "created_date": "1698085409"
+        }
+      },
+      {
+        "protocol": {
+          "key": "QUARK",
+          "name": "QUARK",
+          "chains": [
+            "KUJIRA"
+          ],
+          "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/protocols/quark.png",
+          "url": "https://quarkprotocol.com/",
+          "recipes": {
+            "KUJIRA": [
+              {
+                "key": "KUJIRA_QUARK_STAKE",
+                "name": "Liquid Stake",
+                "chain": "KUJIRA"
+              }
+            ]
+          },
+          "integration_types": [
+            "STAKING"
+          ],
+          "categories": null,
+          "tags": [],
+          "description": null,
+          "twitter_url": null,
+          "telegram_url": null
+        },
+        "stats": {
+          "total_tvl": "506004.61705998273",
+          "chain_tvl": {
+            "KUJIRA": "506004.61705998273"
+          },
+          "created_date": "1704367553"
+        }
+      }
+    ],
+    "total": 10
+  }

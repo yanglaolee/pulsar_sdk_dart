@@ -6,6 +6,20 @@ import '../dataclasses/schemas.dart';
 class ProtocolRestClient extends PulsarRestClient {
   ProtocolRestClient({required super.baseUrl, required super.headers});
 
+  Future<ProtocolData> getProtocol({
+    required String protocolKey,
+  }) async {
+    try {
+      final response = await call(
+        '/protocols/protocols/$protocolKey',
+        'GET',
+      );
+      return ProtocolData.fromJson(response);
+    } catch (e) {
+      rethrow;
+    }
+  }
+
   Future<List<ProtocolData>> listProtocols({ChainKeys? chain}) async {
     final paramsFiltered = filterNonEmptyParams(params: {
       'chain': chain,

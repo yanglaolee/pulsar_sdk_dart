@@ -1,0 +1,978 @@
+[
+    {
+      "key": "ION",
+      "name": "ION",
+      "chains": [
+        "OSMOSIS"
+      ],
+      "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/protocols/ion.png",
+      "url": "https://ion.wtf/",
+      "recipes": {
+        "OSMOSIS": [
+          {
+            "key": "ION_STAKE_OSMOSIS",
+            "name": "Stake",
+            "chain": "OSMOSIS"
+          }
+        ]
+      },
+      "integration_types": [
+        "STAKING"
+      ],
+      "categories": null,
+      "tags": [],
+      "description": null,
+      "twitter_url": null,
+      "telegram_url": null
+    },
+    {
+      "key": "CALC",
+      "name": "CALC",
+      "chains": [
+        "OSMOSIS",
+        "NEUTRON",
+        "KUJIRA"
+      ],
+      "image": "https://app.calculated.fi/images/logo.svg",
+      "url": "https://app.calculated.fi/strategies/",
+      "recipes": {
+        "KUJIRA": [
+          {
+            "key": "CALC_DCA_STRATEGY_KUJIRA",
+            "name": "DCA Strategies",
+            "chain": "KUJIRA"
+          }
+        ],
+        "OSMOSIS": [
+          {
+            "key": "CALC_DCA_STRATEGY_OSMOSIS",
+            "name": "DCA Strategies",
+            "chain": "OSMOSIS"
+          }
+        ],
+        "NEUTRON": [
+          {
+            "key": "CALC_DCA_STRATEGY_NEUTRON",
+            "name": "DCA Strategies",
+            "chain": "NEUTRON"
+          }
+        ]
+      },
+      "integration_types": [
+        "STAKING"
+      ],
+      "categories": null,
+      "tags": [],
+      "description": null,
+      "twitter_url": null,
+      "telegram_url": null
+    },
+    {
+      "key": "OSMOSIS",
+      "name": "OSMOSIS",
+      "chains": [
+        "OSMOSIS"
+      ],
+      "image": "https://assets.coingecko.com/coins/images/16724/small/osmo.png?1632763885",
+      "url": "https://app.osmosis.zone/",
+      "recipes": {
+        "OSMOSIS": [
+          {
+            "key": "OSMOSIS_LIQ_MINING",
+            "name": "Liquidity Mining",
+            "chain": "OSMOSIS"
+          },
+          {
+            "key": "OSMOSIS_SUPERCHARGED_LPOOL",
+            "name": "Supercharged Liquidity Pool",
+            "chain": "OSMOSIS"
+          },
+          {
+            "key": "OSMOSIS_LPOOL",
+            "name": "Liquidity Pools",
+            "chain": "OSMOSIS"
+          },
+          {
+            "key": "OSMOSIS_DEL_STAKE",
+            "name": "Osmosis Delegation Stake",
+            "chain": "OSMOSIS"
+          }
+        ]
+      },
+      "integration_types": [
+        "FARMING",
+        "LIQUIDITY_POOL",
+        "STAKING"
+      ],
+      "categories": null,
+      "tags": [],
+      "description": null,
+      "twitter_url": null,
+      "telegram_url": null
+    },
+    {
+      "key": "MARS",
+      "name": "MARS",
+      "chains": [
+        "OSMOSIS",
+        "MARS",
+        "NEUTRON"
+      ],
+      "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/protocols/mars_protocol.ico",
+      "url": "https://app.marsprotocol.io/#/",
+      "recipes": {
+        "TERRA": [
+          {
+            "key": "MARS_LEVERAGE_YIELD_FARMING_V1",
+            "name": "Mars Leverage Yield Farming",
+            "chain": "TERRA"
+          },
+          {
+            "key": "MARS_BORROW_AND_LENDING_V1",
+            "name": "Mars Borrow and Lending",
+            "chain": "TERRA"
+          },
+          {
+            "key": "MARS_UST_BOOTSTRAPPING_POOL_V1",
+            "name": "Mars UST Bootstrapping Pool",
+            "chain": "TERRA"
+          },
+          {
+            "key": "MARS_LOCKDROP_V1",
+            "name": "Mars Lockdrop",
+            "chain": "TERRA"
+          },
+          {
+            "key": "MARS_GOV_STAKE_V1",
+            "name": "Mars Governance Stake",
+            "chain": "TERRA"
+          }
+        ],
+        "MARS": [
+          {
+            "key": "MARS_DEL_STAKE",
+            "name": "Mars Delegation Stake",
+            "chain": "MARS"
+          }
+        ],
+        "OSMOSIS": [
+          {
+            "key": "MARS_V2_LEVERAGE_YIELD_FARMING",
+            "name": "Leverage Yield Farming",
+            "chain": "OSMOSIS"
+          },
+          {
+            "key": "MARS_PROTOCOL_REWARDS",
+            "name": "Red Bank Rewards",
+            "chain": "OSMOSIS"
+          },
+          {
+            "key": "MARS_LEVERAGE_YIELD_FARMING",
+            "name": "Leverage Yield Farming",
+            "chain": "OSMOSIS"
+          },
+          {
+            "key": "MARS_PROTOCOL_BORROW_LENDING",
+            "name": "Borrow and Lending",
+            "chain": "OSMOSIS"
+          }
+        ],
+        "NEUTRON": [
+          {
+            "key": "MARS_PROTOCOL_BORROW_LENDING_NEUTRON",
+            "name": "Borrow and Lending",
+            "chain": "NEUTRON"
+          }
+        ]
+      },
+      "integration_types": [
+        "LEVERAGE_YIELD_FARMING",
+        "BORROW_AND_LENDING",
+        "STAKING",
+        "PROTOCOL_REWARDS"
+      ],
+      "categories": null,
+      "tags": [],
+      "description": null,
+      "twitter_url": null,
+      "telegram_url": null
+    },
+    {
+      "key": "QUASAR",
+      "name": "QUASAR",
+      "chains": [
+        "OSMOSIS"
+      ],
+      "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/quasar/images/quasar.png",
+      "url": "https://www.quasar.fi/",
+      "recipes": {
+        "QUASAR": [
+          {
+            "key": "QUASAR_DEL_STAKE",
+            "name": "Quasar Delegation Stake",
+            "chain": "QUASAR"
+          }
+        ],
+        "OSMOSIS": [
+          {
+            "key": "QUASAR_VAULTS",
+            "name": "Vaults",
+            "chain": "OSMOSIS"
+          }
+        ]
+      },
+      "integration_types": [
+        "LIQUIDITY_POOL",
+        "STAKING"
+      ],
+      "categories": null,
+      "tags": [],
+      "description": null,
+      "twitter_url": null,
+      "telegram_url": null
+    },
+    {
+      "key": "IBCX",
+      "name": "IBCX",
+      "chains": [
+        "OSMOSIS"
+      ],
+      "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/protocols.py/ibcx",
+      "url": "https://index.ion.wtf/",
+      "recipes": {
+        "OSMOSIS": [
+          {
+            "key": "IBCX_STAKE_OSMOSIS",
+            "name": "Stake IBCX",
+            "chain": "OSMOSIS"
+          },
+          {
+            "key": "IBCX_MINT_OSMOSIS",
+            "name": "Mint",
+            "chain": "OSMOSIS"
+          }
+        ]
+      },
+      "integration_types": [
+        "FARMING",
+        "STAKING"
+      ],
+      "categories": null,
+      "tags": [],
+      "description": null,
+      "twitter_url": null,
+      "telegram_url": null
+    },
+    {
+      "key": "LEVANA_FINANCE",
+      "name": "Levana Finance",
+      "chains": [
+        "INJECTIVE",
+        "OSMOSIS"
+      ],
+      "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/protocols/Levana%20Finance.ico",
+      "url": "https://trade.levana.finance/trade/ATOM_USD",
+      "recipes": {
+        "INJECTIVE": [
+          {
+            "key": "LEVANA_FARMS_INJ",
+            "name": "xLP",
+            "chain": "INJECTIVE"
+          },
+          {
+            "key": "LEVANA_FUTURES_INJ",
+            "name": "Futures",
+            "chain": "INJECTIVE"
+          },
+          {
+            "key": "LEVANA_LIMIT_ORDERS_INJ",
+            "name": "Limit Orders",
+            "chain": "INJECTIVE"
+          },
+          {
+            "key": "LEVANA_LIQ_POOLS_INJ",
+            "name": "Liquidity Pools",
+            "chain": "INJECTIVE"
+          }
+        ],
+        "OSMOSIS": [
+          {
+            "key": "LEVANA_LIQ_POOLS_OSMO",
+            "name": "Liquidity Pools",
+            "chain": "OSMOSIS"
+          },
+          {
+            "key": "LEVANA_LIMIT_ORDERS_OSMO",
+            "name": "Limit Orders",
+            "chain": "OSMOSIS"
+          },
+          {
+            "key": "LEVANA_FARMS_OSMO",
+            "name": "xLP",
+            "chain": "OSMOSIS"
+          },
+          {
+            "key": "LEVANA_FUTURES_OSMO",
+            "name": "Futures",
+            "chain": "OSMOSIS"
+          }
+        ],
+        "SEI": [
+          {
+            "key": "LEVANA_LIQ_POOLS_SEI",
+            "name": "Liquidity Pools",
+            "chain": "SEI"
+          },
+          {
+            "key": "LEVANA_LIMIT_ORDERS_SEI",
+            "name": "Limit Orders",
+            "chain": "SEI"
+          },
+          {
+            "key": "LEVANA_FARMS_SEI",
+            "name": "xLP",
+            "chain": "SEI"
+          },
+          {
+            "key": "LEVANA_FUTURES_SEI",
+            "name": "Futures",
+            "chain": "SEI"
+          }
+        ]
+      },
+      "integration_types": [
+        "FARMING",
+        "ORDER_BOOK",
+        "STAKING",
+        "FUTURES"
+      ],
+      "categories": null,
+      "tags": [],
+      "description": null,
+      "twitter_url": null,
+      "telegram_url": null
+    },
+    {
+      "key": "WHITE WHALE",
+      "name": "WHITE WHALE",
+      "chains": [
+        "MIGALOO",
+        "INJECTIVE",
+        "OSMOSIS",
+        "JUNO",
+        "TERRA2"
+      ],
+      "image": "https://www.whitewhale.money/tokenlogo.png",
+      "url": "https://app.whitewhale.money/swap",
+      "recipes": {
+        "CHIHUAHUA": [
+          {
+            "key": "WHITE_WHALE_VAULTS_CHIHUAHUA",
+            "name": "Vaults",
+            "chain": "CHIHUAHUA"
+          },
+          {
+            "key": "WHITE_WHALE_LP_INCENTIVES_CHIHUAHUA",
+            "name": "Liquidity Pool Incentives",
+            "chain": "CHIHUAHUA"
+          },
+          {
+            "key": "WHITE_WHALE_LIQUIDITY_POOLS_CHIHUAHUA",
+            "name": "Liquidity Pools",
+            "chain": "CHIHUAHUA"
+          }
+        ],
+        "TERRA": [
+          {
+            "key": "WHITE_WHALE_DEPOSIT_V1",
+            "name": "WhiteWhale Deposit",
+            "chain": "TERRA"
+          },
+          {
+            "key": "WHITE_WHALE_GOV_STAKE_V1",
+            "name": "WhiteWhale Governance Stake",
+            "chain": "TERRA"
+          }
+        ],
+        "INJECTIVE": [
+          {
+            "key": "WHITEWHALE_LIQUIDITY_POOLS_INJECTIVE",
+            "name": "Liquidity Pools",
+            "chain": "INJECTIVE"
+          },
+          {
+            "key": "WHITEWHALE_VAULTS_INJECTIVE",
+            "name": "Vaults",
+            "chain": "INJECTIVE"
+          },
+          {
+            "key": "WHITE_WHALE_LP_INCENTIVES_INJECTIVE",
+            "name": "Liquidity Pool Incentives",
+            "chain": "INJECTIVE"
+          }
+        ],
+        "MIGALOO": [
+          {
+            "key": "WHITEWHALE_LIQUIDITY_POOLS_MIGALOO",
+            "name": "Liquidity Pools",
+            "chain": "MIGALOO"
+          },
+          {
+            "key": "WHITE_WHALE_LP_INCENTIVES_MIGALOO",
+            "name": "Liquidity Pool Incentives",
+            "chain": "MIGALOO"
+          }
+        ],
+        "JUNO": [
+          {
+            "key": "WHITE_WHALE_LIQUIDITY_POOLS_JUNO",
+            "name": "Liquidity Pools",
+            "chain": "JUNO"
+          },
+          {
+            "key": "WHITE_WHALE_VAULTS_JUNO",
+            "name": "Vaults",
+            "chain": "JUNO"
+          },
+          {
+            "key": "WHITE_WHALE_LP_INCENTIVES_JUNO",
+            "name": "Liquidity Pool Incentives",
+            "chain": "JUNO"
+          }
+        ],
+        "TERRA2": [
+          {
+            "key": "WHITE_WHALE_LIQUIDITY_POOLS_TERRA2",
+            "name": "Liquidity Pools",
+            "chain": "TERRA2"
+          },
+          {
+            "key": "WHITE_WHALE_VAULTS_TERRA2",
+            "name": "Vaults",
+            "chain": "TERRA2"
+          },
+          {
+            "key": "WHITE_WHALE_LP_INCENTIVES_TERRA2",
+            "name": "Liquidity Pool Incentives",
+            "chain": "TERRA2"
+          }
+        ],
+        "COMDEX": [
+          {
+            "key": "WHITEWHALE_LIQUIDITY_POOLS_COMDEX",
+            "name": "Liquidity Pools",
+            "chain": "COMDEX"
+          }
+        ],
+        "SEI": [
+          {
+            "key": "WHITEWHALE_LIQUIDITY_POOLS_SEI",
+            "name": "Liquidity Pools",
+            "chain": "SEI"
+          },
+          {
+            "key": "WHITE_WHALE_LP_INCENTIVES_SEI",
+            "name": "Liquidity Pool Incentives",
+            "chain": "SEI"
+          }
+        ],
+        "OSMOSIS": [
+          {
+            "key": "WHITEWHALE_LIQUIDITY_POOLS_OSMOSIS",
+            "name": "Liquidity Pools",
+            "chain": "OSMOSIS"
+          },
+          {
+            "key": "WHITE_WHALE_LP_INCENTIVES_OSMOSIS",
+            "name": "Liquidity Pool Incentives",
+            "chain": "OSMOSIS"
+          }
+        ]
+      },
+      "integration_types": [
+        "LIQUIDITY_POOL",
+        "STAKING"
+      ],
+      "categories": null,
+      "tags": [],
+      "description": null,
+      "twitter_url": null,
+      "telegram_url": null
+    },
+    {
+      "key": "MILKYWAY",
+      "name": "MILKYWAY",
+      "chains": [
+        "OSMOSIS"
+      ],
+      "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/protocols/milkyway.png",
+      "url": "https://app.milkyway.zone/",
+      "recipes": {
+        "OSMOSIS": [
+          {
+            "key": "MILKYWAY_LIQUID_STAKE",
+            "name": "Liquid Stake",
+            "chain": "OSMOSIS"
+          }
+        ]
+      },
+      "integration_types": [
+        "STAKING"
+      ],
+      "categories": null,
+      "tags": [],
+      "description": null,
+      "twitter_url": null,
+      "telegram_url": null
+    },
+    {
+      "key": "ASTROPORT",
+      "name": "ASTROPORT",
+      "chains": [
+        "INJECTIVE",
+        "TERRA2",
+        "NEUTRON",
+        "OSMOSIS"
+      ],
+      "image": "https://astroport.fi/astro_logo.png",
+      "url": "https://app.astroport.fi/swap",
+      "recipes": {
+        "TERRA": [
+          {
+            "key": "ASTROPORT_LP_V1",
+            "name": "Astroport LP Token",
+            "chain": "TERRA"
+          },
+          {
+            "key": "ASTRO_GOV_STAKE_V1",
+            "name": "Astro Governance Stake",
+            "chain": "TERRA"
+          },
+          {
+            "key": "ASTROPORT_LP_STAKE_V1",
+            "name": "Astroport LP Stake",
+            "chain": "TERRA"
+          },
+          {
+            "key": "ASTROPORT_MONEY_AIRDROP_V1",
+            "name": "Astroport Airdrop",
+            "chain": "TERRA"
+          },
+          {
+            "key": "ASTROPORT_UST_ASTRO_LP_STAKE_V1",
+            "name": "Astroport UST Astro LP Stake",
+            "chain": "TERRA"
+          },
+          {
+            "key": "ASTROPORT_FARM_V1",
+            "name": "Farms",
+            "chain": "TERRA"
+          },
+          {
+            "key": "ASTROPORT_LPOOL_V1",
+            "name": "Astroport Liquidity Pool",
+            "chain": "TERRA"
+          }
+        ],
+        "OSMOSIS": [
+          {
+            "key": "ASTROPORT_FARMS_OSMOSIS",
+            "name": "Farms",
+            "chain": "OSMOSIS"
+          },
+          {
+            "key": "ASTROPORT_LPOOL_OSMOSIS",
+            "name": "Liquidity Pools",
+            "chain": "OSMOSIS"
+          }
+        ],
+        "INJECTIVE": [
+          {
+            "key": "INJECTIVE_ASTROPORT_LIMIT_ORDERS",
+            "name": "Limit Orders",
+            "chain": "INJECTIVE"
+          },
+          {
+            "key": "ASTROPORT_FARMS_V2_INJECTIVE",
+            "name": "Farms V2",
+            "chain": "INJECTIVE"
+          },
+          {
+            "key": "ASTROPORT_FARMS_INJECTIVE",
+            "name": "Farms",
+            "chain": "INJECTIVE"
+          },
+          {
+            "key": "ASTROPORT_LPOOL_INJECTIVE",
+            "name": "Liquidity Pools",
+            "chain": "INJECTIVE"
+          }
+        ],
+        "TERRA2": [
+          {
+            "key": "ASTROPORT_MONEY_AIRDROP_V1_TERRA2",
+            "name": "Astroport Airdrop",
+            "chain": "TERRA2"
+          },
+          {
+            "key": "ASTROPORT_LIMIT_ORDERS_TERRA2",
+            "name": "Astroport Limit Orders",
+            "chain": "TERRA2"
+          },
+          {
+            "key": "ASTROPORT_FARMS_V2_TERRA2",
+            "name": "Farms V2",
+            "chain": "TERRA2"
+          },
+          {
+            "key": "ASTROPORT_FARM_V1_TERRA2",
+            "name": "Farms",
+            "chain": "TERRA2"
+          },
+          {
+            "key": "ASTROPORT_LPOOL_TERRA2",
+            "name": "Liquidity Pools",
+            "chain": "TERRA2"
+          },
+          {
+            "key": "ASTROPORT_LP_TERRA_2",
+            "name": "Astroport LP Token",
+            "chain": "TERRA2"
+          },
+          {
+            "key": "ASTRO_GOV_STAKE_V1_TERRA2",
+            "name": "Astro Governance Stake",
+            "chain": "TERRA2"
+          }
+        ],
+        "SEI": [
+          {
+            "key": "ASTROPORT_FARMS_V2_SEI",
+            "name": "Farms V2",
+            "chain": "SEI"
+          },
+          {
+            "key": "ASTROPORT_FARMS_SEI",
+            "name": "Farms",
+            "chain": "SEI"
+          },
+          {
+            "key": "ASTROPORT_LPOOL_SEI",
+            "name": "Liquidity Pools",
+            "chain": "SEI"
+          }
+        ],
+        "NEUTRON": [
+          {
+            "key": "ASTROPORT_LIQUIDITY_POOLS_NEUTRON",
+            "name": "Liquidity Pools",
+            "chain": "NEUTRON"
+          },
+          {
+            "key": "NEUTRON_ASTROPORT_LIMIT_ORDERS",
+            "name": "Limit Orders",
+            "chain": "NEUTRON"
+          },
+          {
+            "key": "ASTROPORT_FARMS_NEUTRON",
+            "name": "Farms",
+            "chain": "NEUTRON"
+          },
+          {
+            "key": "ASTROPORT_FARMS_V2_NEUTRON",
+            "name": "Farms V2",
+            "chain": "NEUTRON"
+          },
+          {
+            "key": "ASTRO_GOV_STAKE_NEUTRON",
+            "name": "Astro Governance Stake",
+            "chain": "NEUTRON"
+          }
+        ]
+      },
+      "integration_types": [
+        "LP_TOKEN",
+        "FARMING",
+        "LIQUIDITY_POOL",
+        "ORDER_BOOK",
+        "STAKING",
+        "AIRDROP"
+      ],
+      "categories": null,
+      "tags": [],
+      "description": null,
+      "twitter_url": null,
+      "telegram_url": null
+    },
+    {
+      "key": "TFM",
+      "name": "TFM",
+      "chains": [
+        "OSMOSIS",
+        "JUNO",
+        "TERRA2",
+        "NEUTRON"
+      ],
+      "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/protocols/tfm.png",
+      "url": "https://tfm.com",
+      "recipes": {
+        "TERRA2": [
+          {
+            "key": "TFM_LIMIT_ORDERS_TERRA",
+            "name": "Limit Orders",
+            "chain": "TERRA2"
+          }
+        ],
+        "JUNO": [
+          {
+            "key": "TFM_LIMIT_ORDERS_JUNO",
+            "name": "Limit Orders",
+            "chain": "JUNO"
+          }
+        ],
+        "OSMOSIS": [
+          {
+            "key": "TFM_LIMIT_ORDERS_OSMOSIS",
+            "name": "Limit Orders",
+            "chain": "OSMOSIS"
+          }
+        ],
+        "NEUTRON": [
+          {
+            "key": "TFM_LIMIT_ORDERS_NEUTRON",
+            "name": "Limit Orders",
+            "chain": "NEUTRON"
+          }
+        ]
+      },
+      "integration_types": [
+        "ORDER_BOOK"
+      ],
+      "categories": null,
+      "tags": [],
+      "description": null,
+      "twitter_url": null,
+      "telegram_url": null
+    },
+    {
+      "key": "DAO DAO",
+      "name": "DAO DAO",
+      "chains": [
+        "MIGALOO",
+        "STARGAZE",
+        "OSMOSIS",
+        "NEUTRON",
+        "JUNO",
+        "KUJIRA"
+      ],
+      "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/protocols/daodao_logo.png",
+      "url": "https://daodao.zone/home",
+      "recipes": {
+        "JUNO": [
+          {
+            "key": "DAO_DAO_GOVERNANCE_JUNO_2",
+            "name": "Governance",
+            "chain": "JUNO"
+          },
+          {
+            "key": "DAO_DAO_GOVERNANCE_JUNO",
+            "name": "DAO DAO Governance",
+            "chain": "JUNO"
+          }
+        ],
+        "STARGAZE": [
+          {
+            "key": "DAO_DAO_GOVERNANCE_STARGAZE",
+            "name": "Governance",
+            "chain": "STARGAZE"
+          }
+        ],
+        "MIGALOO": [
+          {
+            "key": "DAO_DAO_GOVERNANCE_MIGALOO",
+            "name": "Governance",
+            "chain": "MIGALOO"
+          }
+        ],
+        "KUJIRA": [
+          {
+            "key": "DAO_DAO_GOVERNANCE_KUJIRA",
+            "name": "Governance",
+            "chain": "KUJIRA"
+          }
+        ],
+        "NEUTRON": [
+          {
+            "key": "DAO_DAO_GOVERNANCE_NEUTRON",
+            "name": "Governance",
+            "chain": "NEUTRON"
+          }
+        ],
+        "OSMOSIS": [
+          {
+            "key": "DAO_DAO_GOVERNANCE_OSMOSIS",
+            "name": "Osmosis DAO DAO Governance",
+            "chain": "OSMOSIS"
+          },
+          {
+            "key": "DAO_DAO_GOVERNANCE_OSMOSIS_2",
+            "name": "Governance",
+            "chain": "OSMOSIS"
+          }
+        ]
+      },
+      "integration_types": [
+        "STAKING"
+      ],
+      "categories": null,
+      "tags": [],
+      "description": null,
+      "twitter_url": null,
+      "telegram_url": null
+    },
+    {
+      "key": "ERIS",
+      "name": "ERIS",
+      "chains": [
+        "MIGALOO",
+        "INJECTIVE",
+        "OSMOSIS",
+        "JUNO",
+        "TERRA2",
+        "KUJIRA"
+      ],
+      "image": "https://www.erisprotocol.com/assets/favicon_light.svg",
+      "url": "https://www.erisprotocol.com/#/terra/amplifier",
+      "recipes": {
+        "CHIHUAHUA": [
+          {
+            "key": "ERIS_STAKE_CHIHUAHUA",
+            "name": "Eris Amplifier",
+            "chain": "CHIHUAHUA"
+          }
+        ],
+        "KUJIRA": [
+          {
+            "key": "ERIS_STAKE_KUJIRA",
+            "name": "Eris Amplifier",
+            "chain": "KUJIRA"
+          },
+          {
+            "key": "KUJIRA_ERIS_GOVERNANCE",
+            "name": "Governance",
+            "chain": "KUJIRA"
+          }
+        ],
+        "MIGALOO": [
+          {
+            "key": "ERIS_GOV_MIGALOO",
+            "name": "White Whale Governance",
+            "chain": "MIGALOO"
+          },
+          {
+            "key": "ERIS_STAKE_MIGALOO",
+            "name": "Eris Amplifier",
+            "chain": "MIGALOO"
+          }
+        ],
+        "TERRA": [
+          {
+            "key": "ERIS_STAKE_TERRA",
+            "name": "Eris Amplifier",
+            "chain": "TERRA"
+          }
+        ],
+        "ARCHWAY": [
+          {
+            "key": "ERIS_STAKE_ARCHWAY",
+            "name": "Eris Amplifier",
+            "chain": "ARCHWAY"
+          },
+          {
+            "key": "ARCHWAY_ERIS_GOVERNANCE",
+            "name": "Governance",
+            "chain": "ARCHWAY"
+          }
+        ],
+        "INJECTIVE": [
+          {
+            "key": "ERIS_STAKE_INJECTIVE",
+            "name": "Eris Amplifier",
+            "chain": "INJECTIVE"
+          },
+          {
+            "key": "INJ_ERIS_GOVERNANCE",
+            "name": "Governance",
+            "chain": "INJECTIVE"
+          }
+        ],
+        "TERRA2": [
+          {
+            "key": "ERIS_STAKE_TERRA2",
+            "name": "Eris Amplifier",
+            "chain": "TERRA2"
+          },
+          {
+            "key": "ERIS_GOVERNANCE_TERRA2",
+            "name": "Eris Governance",
+            "chain": "TERRA2"
+          },
+          {
+            "key": "ERIS_COMPOUND_TERRA2",
+            "name": "Eris Compound",
+            "chain": "TERRA2"
+          },
+          {
+            "key": "ERIS_ARBITRAGE_VAULT_TERRA2",
+            "name": "Eris Arbitrage Vault",
+            "chain": "TERRA2"
+          }
+        ],
+        "SEI": [
+          {
+            "key": "ERIS_STAKE_SEI",
+            "name": "Eris Amplifier",
+            "chain": "SEI"
+          },
+          {
+            "key": "SEI_ERIS_GOVERNANCE",
+            "name": "Governance",
+            "chain": "SEI"
+          }
+        ],
+        "OSMOSIS": [
+          {
+            "key": "ERIS_STAKE_OSMO",
+            "name": "Eris Amplifier",
+            "chain": "OSMOSIS"
+          },
+          {
+            "key": "OSMO_ERIS_GOVERNANCE",
+            "name": "Governance",
+            "chain": "OSMOSIS"
+          }
+        ],
+        "JUNO": [
+          {
+            "key": "ERIS_STAKE_JUNO",
+            "name": "Eris Amplifier",
+            "chain": "JUNO"
+          },
+          {
+            "key": "JUNO_ERIS_GOVERNANCE",
+            "name": "Governance",
+            "chain": "JUNO"
+          }
+        ]
+      },
+      "integration_types": [
+        "FARMING",
+        "STAKING"
+      ],
+      "categories": null,
+      "tags": [],
+      "description": null,
+      "twitter_url": null,
+      "telegram_url": null
+    }
+  ]

@@ -29,6 +29,6 @@ String _basicValueToString(dynamic value) {
   } else if (value == null) {
     return 'null';
   } else {
-    throw Exception('Unsupported type: ${value.runtimeType}');
+    return value.toString();
   }
 }

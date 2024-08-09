@@ -1,0 +1,111 @@
+{
+    "name": "Bad Kid #6042",
+    "id": "STARGAZE__stars19jq6mj84cnt9p7sagjxqf8hxtczwc8wlpuwe4sh62w45aheseues57n420__6042",
+    "token_id": "6042",
+    "chain": "STARGAZE",
+    "traits": {
+      "paper color": "ivory",
+      "hair": "black hair",
+      "body": "shorty",
+      "skin": "G",
+      "badness": "15",
+      "mouth": "gritted",
+      "muscles": "15",
+      "nose": "nostrils",
+      "eyes": "round",
+      "brains": "30",
+      "age": "6",
+      "clothes": "blue shirt",
+      "paper texture": "subtle",
+      "accessory": "None"
+    },
+    "traits_hash": "eydwYXBlciBjb2xvcic6ICdpdm9yeScsICdoYWlyJzogJ2JsYWNrIGhhaXInLCAnYm9keSc6ICdzaG9ydHknLCAnc2tpbic6ICdHJywgJ2JhZG5lc3MnOiAnMTUnLCAnbW91dGgnOiAnZ3JpdHRlZCcsICdtdXNjbGVzJzogJzE1JywgJ25vc2UnOiAnbm9zdHJpbHMnLCAnZXllcyc6ICdyb3VuZCcsICdicmFpbnMnOiAnMzAnLCAnYWdlJzogJzYnLCAnY2xvdGhlcyc6ICdibHVlIHNoaXJ0JywgJ3BhcGVyIHRleHR1cmUnOiAnc3VidGxlJywgJ2FjY2Vzc29yeSc6ICdOb25lJ30=",
+    "creator_address": null,
+    "owner_address": "stars1nm50zycnm9yf33rv8n6lpks24usxzahkrc70vk",
+    "token": {
+      "name": "Stargaze",
+      "denom": "STARS",
+      "id": "6536aae97228f5b310f281c0",
+      "display_id": "6536aae97228f5b310f281c0",
+      "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/tokens/Stargaze.png",
+      "latest_price": "0.008398194730494917",
+      "price_24h_change": null,
+      "chain_properties": null
+    },
+    "wallet": null,
+    "collection": {
+      "id": "STARGAZE__stars19jq6mj84cnt9p7sagjxqf8hxtczwc8wlpuwe4sh62w45aheseues57n420",
+      "address": "stars19jq6mj84cnt9p7sagjxqf8hxtczwc8wlpuwe4sh62w45aheseues57n420",
+      "chain": "STARGAZE",
+      "marketplaces": [
+        {
+          "indexer_id": "stargaze",
+          "slug_id": "stars19jq6mj84cnt9p7sagjxqf8hxtczwc8wlpuwe4sh62w45aheseues57n420",
+          "url": "https://www.stargaze.zone/marketplace/stars19jq6mj84cnt9p7sagjxqf8hxtczwc8wlpuwe4sh62w45aheseues57n420",
+          "marketplace_id": "stargaze"
+        },
+        {
+          "indexer_id": "tfm_stargaze",
+          "slug_id": null,
+          "url": "https://tfm.com/nft/collections/stars19jq6mj84cnt9p7sagjxqf8hxtczwc8wlpuwe4sh62w45aheseues57n420/items",
+          "marketplace_id": "tfm"
+        }
+      ],
+      "number_of_assets": 9999,
+      "number_of_owners": 5745,
+      "available_traits": [
+        "accessory",
+        "age",
+        "badness",
+        "body",
+        "brains",
+        "clothes",
+        "eyes",
+        "hair",
+        "mouth",
+        "muscles",
+        "nose",
+        "paper color",
+        "paper texture",
+        "skin"
+      ],
+      "token": {
+        "name": "Stargaze",
+        "denom": "STARS",
+        "id": "6536aae97228f5b310f281c0",
+        "display_id": "6536aae97228f5b310f281c0",
+        "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/tokens/Stargaze.png",
+        "latest_price": "0.008398194730494917",
+        "price_24h_change": null,
+        "chain_properties": null
+      },
+      "last_24h_change": "13396.0",
+      "last_24h_change_percentage": "9.263920776742",
+      "name": "Bad Kids",
+      "avatar": "https://ipfs-gw.stargaze-apis.com/ipfs/QmSFc8TPuVwLUfxEov7s66rfKoJ75NRcBRC4uQjMRcJoZ9/badkids.jpg",
+      "banner": null,
+      "description": "Bad Kids is a collection of 9,999 bad drawings of bad kids",
+      "volume": "7556066.0",
+      "volume_usd": "63975.19135166205",
+      "average_price": null,
+      "floor_price": "158000.0",
+      "floor_price_usd": "1337.743772164325",
+      "market_cap": "1579842000.0",
+      "market_cap_usd": "13376099.977871086",
+      "stats": null,
+      "low_volume": false,
+      "unknown_volume": false,
+      "is_fully_index": true
+    },
+    "description": "Bad Kids is a collection of 9,999 bad drawings of bad kids",
+    "avatar": "https://ipfs-gw.stargaze-apis.com/ipfs/QmbGvE3wmxex8KiBbbvMjR8f9adR28s3XkiZSTuGmHoMHV/6042.jpg",
+    "video_avatar": null,
+    "price": "158000.0",
+    "url": "https://app.stargaze.zone/marketplace/stars19jq6mj84cnt9p7sagjxqf8hxtczwc8wlpuwe4sh62w45aheseues57n420/6042",
+    "urls": {
+      "stargaze": "https://www.stargaze.zone/marketplace/stars19jq6mj84cnt9p7sagjxqf8hxtczwc8wlpuwe4sh62w45aheseues57n420/6042",
+      "tfm_stargaze": "https://tfm.com/nft/collections/token/stars19jq6mj84cnt9p7sagjxqf8hxtczwc8wlpuwe4sh62w45aheseues57n420/6042"
+    },
+    "rarity_score": 393.1223690199197,
+    "rank": 4588
+  }
