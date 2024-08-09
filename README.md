@@ -1,39 +1,39 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# pulsar_sdk_dart
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+A wrapper API for the Pulsar SDK in Dart language. 
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
+The original idea of ​​the project was to combine it with Flutter to develop cross-platform applications.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+For details, please refer to the official documentation: [here](https://pulsar.readme.io/)
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+If you don’t know what Pulsar does yet, check out their official website: [here](https://app.pulsar.finance/)
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+First add this package to your Dart project:
+
+```bash
+dart pub add pulsar_sdk_dart
+```
+Then, you can use it in your project code, like:
 
 ```dart
-const like = 'sample';
+import 'package:pulsar_sdk_dart/pulsar_sdk_dart.dart';
+
+void main async {
+    final apiKey = 'YOUR API KEY HERE';
+
+    final sdk = PulsarSDK(apiKey: apiKey);
+  
+    // get the frist ten Badkids NFT
+    final paginatedNFTItems = await sdk.nfts.listCollectionNFTs(
+        collectionId:'STARGAZE__stars19jq6mj84cnt9p7sagjxqf8hxtczwc8wlpuwe4sh62w45aheseues57n420',
+        limit: 10,
+      );
+
+    print(paginatedNFTItems);
+}
 ```
 
 ## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+This SDK is basically rewritten based on the Python version.
