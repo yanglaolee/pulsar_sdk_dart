@@ -4,7 +4,7 @@ import '../dataclasses/schemas.dart';
 class NameServiceRestClient extends PulsarRestClient {
   NameServiceRestClient({required super.baseUrl, required super.headers});
 
-  Future<ResolvedName> resolvedName(String name) async {
+  Future<ResolvedName> resolvedName({required String name}) async {
     try {
       final response = await call(
         '/name-service/resolve-name',
@@ -17,7 +17,7 @@ class NameServiceRestClient extends PulsarRestClient {
     }
   }
 
-  Future<ResolvedAddress> resolvedAddress(String address) async {
+  Future<ResolvedAddress> resolvedAddress({required String address}) async {
     try {
       final response = await call(
         '/name-service/resolve-address',

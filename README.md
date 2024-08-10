@@ -2,7 +2,7 @@
 
 A wrapper API for the Pulsar SDK in Dart language. 
 
-The original idea of ​​the project was to combine it with Flutter to develop cross-platform applications.
+The original idea of ​​the project was to combine it with Flutter to develop cross-platform asset management applications.
 
 For details, please refer to the official documentation: [here](https://pulsar.readme.io/)
 
@@ -10,12 +10,12 @@ If you don’t know what Pulsar does yet, check out their official website: [her
 
 ## Usage
 
-First add this package to your Dart project:
+First add this package to your Flutter/Dart project:
 
 ```bash
-dart pub add pulsar_sdk_dart
+flutter/dart pub add pulsar_sdk_dart
 ```
-Then, you can use it in your project code, like:
+Then, you can use it in your code, like:
 
 ```dart
 import 'package:pulsar_sdk_dart/pulsar_sdk_dart.dart';

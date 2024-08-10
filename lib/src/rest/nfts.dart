@@ -6,6 +6,39 @@ import '../dataclasses/schemas.dart';
 class NFTRestClient extends PulsarRestClient {
   NFTRestClient({required super.baseUrl, required super.headers});
 
+  Future<PaginatedNFTCollections> listNFTs({
+    String? name,
+    List<ChainKeys>? chains,
+    NFTCollectionSort? sortBy,
+    int offset = 0,
+    int limit = 10,
+    double? floorMinimum,
+    double? floorMaximum,
+    bool isFullyIndex = true,
+  }) async {
+    final paramsFiltered = filterNonEmptyParams(params: {
+      'name': name,
+      'chains': chains,
+      'sort_by': sortBy,
+      'offset': offset,
+      'limit': limit,
+      'floor_minimum': floorMinimum,
+      'floor_maximum': floorMaximum,
+      'is_fully_index': isFullyIndex,
+    });
+
+    try {
+      final response = await call(
+        '/nfts',
+        'GET',
+        queryParams: paramsFiltered,
+      );
+      return PaginatedNFTCollections.fromJson(response);
+    } catch (e) {
+      rethrow;
+    }
+  }
+
   Future<PaginatedNFTItems> listCollectionNFTs({
     required String collectionId,
     String? searchString,
@@ -107,36 +140,4 @@ class NFTRestClient extends PulsarRestClient {
     }
   }
 
-  Future<PaginatedNFTCollections> listNFTs({
-    String? name,
-    List<ChainKeys>? chains,
-    NFTCollectionSort? sortBy,
-    int offset = 0,
-    int limit = 10,
-    double? floorMinimum,
-    double? floorMaximum,
-    bool isFullyIndex = true,
-  }) async {
-    final paramsFiltered = filterNonEmptyParams(params: {
-      'name': name,
-      'chains': chains,
-      'sort_by': sortBy,
-      'offset': offset,
-      'limit': limit,
-      'floor_minimum': floorMinimum,
-      'floor_maximum': floorMaximum,
-      'is_fully_index': isFullyIndex,
-    });
-
-    try {
-      final response = await call(
-        '/nfts',
-        'GET',
-        queryParams: paramsFiltered,
-      );
-      return PaginatedNFTCollections.fromJson(response);
-    } catch (e) {
-      rethrow;
-    }
-  }
 }

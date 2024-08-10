@@ -11,7 +11,7 @@ void main() {
   group('name service client', () {
     test('resolvedName', () async {
       final resolvedName = await client.resolvedName(
-        'lfg.stars'
+        name:'lfg.stars'
       );
 
       print(resolvedName);
@@ -19,7 +19,7 @@ void main() {
 
     test('resolvedAddress', () async {
       final resolvedAddress = await client.resolvedAddress(
-        'stars1qf0kxkk60qrcj5qa7v7t439249qfkcd4uagcnm'
+        address: 'stars1qf0kxkk60qrcj5qa7v7t439249qfkcd4uagcnm'
       );
 
       print(resolvedAddress);

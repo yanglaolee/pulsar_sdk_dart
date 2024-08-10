@@ -1,0 +1,398 @@
+{
+    "response": [
+      {
+        "token": {
+          "name": "Kujira",
+          "denom": "KUJI",
+          "id": "6536aae7e88d67ced04b72f0",
+          "display_id": "6536aae7e88d67ced04b72f0",
+          "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/tokens/Kujira.png",
+          "latest_price": "0.5063248656209793",
+          "price_24h_change": "-0.008626033083415918",
+          "chain_properties": null,
+          "extended_information": {
+            "description": "Kujira is committed to levelling the playing field in decentralized finance by building dApps for regular crypto users.",
+            "categories": [
+              "Cosmos Ecosystem",
+              "Arbitrum Ecosystem",
+              "Optimism Ecosystem",
+              "Ethereum Ecosystem"
+            ],
+            "url_learn_more": null
+          },
+          "addresses": {
+            "MAYA": {
+              "type": "native_token",
+              "value": "KUJI",
+              "decimals": 8
+            },
+            "KUJIRA": {
+              "type": "native_token",
+              "value": "UKUJI",
+              "decimals": 6
+            },
+            "ETHEREUM": {
+              "type": "address",
+              "value": "0x96543ef8d2c75c26387c1a319ae69c0bee6f3fe7",
+              "decimals": 6
+            },
+            "ARBITRUM": {
+              "type": "address",
+              "value": "0x3a18dcc9745edcd1ef33ecb93b0b6eba5671e7ca",
+              "decimals": 6
+            },
+            "OPTIMISM": {
+              "type": "address",
+              "value": "0x3a18dcc9745edcd1ef33ecb93b0b6eba5671e7ca",
+              "decimals": 6
+            },
+            "TERITORI": {
+              "type": "native_token",
+              "value": "UKUJI",
+              "decimals": 6
+            }
+          }
+        },
+        "stats": {
+          "market_cap": "61912814.10961658",
+          "total_liquidity": null,
+          "price_oracles": null,
+          "last_24_hour_price": "0.5146662510461213",
+          "last_24_hour_change": "-0.008626033083415918",
+          "last_24_hour_change_percentage": "-1.6760440510491037",
+          "last_7_day_price": "0.45006884161784344",
+          "last_7_day_change": "0.056256024003135896",
+          "last_7_day_change_percentage": "12.499426487937868"
+        }
+      },
+      {
+        "token": {
+          "name": "BLEND",
+          "denom": "BLEND",
+          "id": "6536aae87228f5b310f2819b",
+          "display_id": "6536aae87228f5b310f2819b",
+          "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/blend.svg",
+          "latest_price": null,
+          "price_24h_change": null,
+          "chain_properties": null,
+          "extended_information": {
+            "description": "Blend Token",
+            "categories": [],
+            "url_learn_more": null
+          },
+          "addresses": {
+            "KUJIRA": {
+              "type": "native_token",
+              "value": "FACTORY/KUJIRA1SLUEERJZ7MX9JP45U3Y0RJWTVHCF8A68WF2MJT/UBLEND",
+              "decimals": 6
+            }
+          }
+        },
+        "stats": {
+          "market_cap": "0",
+          "total_liquidity": null,
+          "price_oracles": null,
+          "last_24_hour_price": null,
+          "last_24_hour_change": null,
+          "last_24_hour_change_percentage": null,
+          "last_7_day_price": null,
+          "last_7_day_change": null,
+          "last_7_day_change_percentage": null
+        }
+      },
+      {
+        "token": {
+          "name": "WINK",
+          "denom": "WINK",
+          "id": "6536aae87228f5b310f281a0",
+          "display_id": "6536aae87228f5b310f281a0",
+          "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/wink.png",
+          "latest_price": "0.012630322678986646",
+          "price_24h_change": "-0.005249790444638341",
+          "chain_properties": null,
+          "extended_information": {
+            "description": "The content house of Kujira",
+            "categories": [],
+            "url_learn_more": null
+          },
+          "addresses": {
+            "KUJIRA": {
+              "type": "native_token",
+              "value": "FACTORY/KUJIRA12CJJEYTRQCJ25UV349THLTCYGNP9K0KUKPCT0E/UWINK",
+              "decimals": 6
+            }
+          }
+        },
+        "stats": {
+          "market_cap": "876032.0687496432",
+          "total_liquidity": null,
+          "price_oracles": null,
+          "last_24_hour_price": "0.017945907383038966",
+          "last_24_hour_change": "-0.005249790444638341",
+          "last_24_hour_change_percentage": "-29.253413230027164",
+          "last_7_day_price": "0.009766537507464562",
+          "last_7_day_change": "0.0028637851715220836",
+          "last_7_day_change_percentage": "29.322420247025036"
+        }
+      },
+      {
+        "token": {
+          "name": "MNTA",
+          "denom": "MNTA",
+          "id": "6536aae87228f5b310f281ae",
+          "display_id": "6536aae87228f5b310f281ae",
+          "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/mnta.png",
+          "latest_price": "0.1520865815230521",
+          "price_24h_change": "-0.0050066086593434644",
+          "chain_properties": null,
+          "extended_information": {
+            "description": "MantaDAO Governance Token",
+            "categories": [],
+            "url_learn_more": null
+          },
+          "addresses": {
+            "KUJIRA": {
+              "type": "native_token",
+              "value": "FACTORY/KUJIRA1643JXG8WASY5CFCN7XM8RD742YEAZCKSQLG4D7/UMNTA",
+              "decimals": 6
+            }
+          }
+        },
+        "stats": {
+          "market_cap": "15218365.426282251",
+          "total_liquidity": null,
+          "price_oracles": null,
+          "last_24_hour_price": "0.15719026292216598",
+          "last_24_hour_change": "-0.0050066086593434644",
+          "last_24_hour_change_percentage": "-3.1850628443967537",
+          "last_7_day_price": "0.15319103637194362",
+          "last_7_day_change": "-0.0011044548488915173",
+          "last_7_day_change_percentage": "-0.7209657138227925"
+        }
+      },
+      {
+        "token": {
+          "name": "USK",
+          "denom": "USK",
+          "id": "6536aae87228f5b310f281b1",
+          "display_id": "6536aae87228f5b310f281b1",
+          "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/tokens/USK.png",
+          "latest_price": "0.9993204959433202",
+          "price_24h_change": "0.0032118666064638868",
+          "chain_properties": null,
+          "extended_information": {
+            "description": "USK is an over-collateralise stablecoin, native to the Kujira network",
+            "categories": [
+              "Stablecoins",
+              "Ethereum Ecosystem"
+            ],
+            "url_learn_more": null
+          },
+          "addresses": {
+            "KUJIRA": {
+              "type": "native_token",
+              "value": "FACTORY/KUJIRA1QK00H5ATUTPSV900X202PXX42NPJR9THG58DNQPA72F2P7M2LUASE444A7/UUSK",
+              "decimals": 6
+            },
+            "ETHEREUM": {
+              "type": "address",
+              "value": "0x1b3c515f58857e141a966b33182f2f3feecc10e9",
+              "decimals": 6
+            },
+            "MAYA": {
+              "type": "native_token",
+              "value": "USK",
+              "decimals": 8
+            }
+          }
+        },
+        "stats": {
+          "market_cap": "6094235.65296658",
+          "total_liquidity": null,
+          "price_oracles": null,
+          "last_24_hour_price": "0.9980571469549852",
+          "last_24_hour_change": "0.0032118666064638868",
+          "last_24_hour_change_percentage": "0.3218118938643073",
+          "last_7_day_price": "0.9969569346188377",
+          "last_7_day_change": "0.002363561324482455",
+          "last_7_day_change_percentage": "0.2370775750094083"
+        }
+      },
+      {
+        "token": {
+          "name": "IBC - Wrapped Bitcoin",
+          "denom": "IBC.WBTC",
+          "id": "6536abc12a964e6ef10785ce",
+          "display_id": "6536aae72a964e6ef10721d7",
+          "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/wbtc.png",
+          "latest_price": "60607.57689851035",
+          "price_24h_change": "-428.0524253823387",
+          "chain_properties": null,
+          "extended_information": {
+            "description": "IBC representation token of Wrapped Bitcoin.\nWrapped Bitcoin on Axelar",
+            "categories": [],
+            "url_learn_more": null
+          },
+          "addresses": {
+            "KUJIRA": {
+              "type": "native_token",
+              "value": "IBC/301DAF9CB0A9E247CD478533EF0E21F48FF8118C4A51F77C8BC3EB70E5566DBC",
+              "decimals": 8
+            }
+          }
+        },
+        "stats": {
+          "market_cap": "3869835.7437268263",
+          "total_liquidity": null,
+          "price_oracles": null,
+          "last_24_hour_price": "61128.59453983463",
+          "last_24_hour_change": "-428.0524253823387",
+          "last_24_hour_change_percentage": "-0.7002490873618825",
+          "last_7_day_price": "62083.6063363781",
+          "last_7_day_change": "-1476.02943786775",
+          "last_7_day_change_percentage": "-2.377486626454015"
+        }
+      },
+      {
+        "token": {
+          "name": "IBC - USD Coin",
+          "denom": "IBC.USDC",
+          "id": "6536abc12a964e6ef10785cf",
+          "display_id": "6536aae72a964e6ef10721e4",
+          "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png",
+          "latest_price": "0.9733246647174509",
+          "price_24h_change": "0.0013456382568164393",
+          "chain_properties": null,
+          "extended_information": {
+            "description": "IBC representation token of USD Coin.\nCircle's stablecoin on Axelar",
+            "categories": [],
+            "url_learn_more": null
+          },
+          "addresses": {
+            "KUJIRA": {
+              "type": "native_token",
+              "value": "IBC/2E32465524ABC9C09F1830BC9252CA6995A6F5A1D3D51AFC744924DC5D892A0F",
+              "decimals": 6
+            }
+          }
+        },
+        "stats": {
+          "market_cap": "43439031.213880725",
+          "total_liquidity": null,
+          "price_oracles": null,
+          "last_24_hour_price": "0.973716790786522",
+          "last_24_hour_change": "0.0013456382568164393",
+          "last_24_hour_change_percentage": "0.1381960616833453",
+          "last_7_day_price": "0.9684016419111907",
+          "last_7_day_change": "0.004923022806260224",
+          "last_7_day_change_percentage": "0.5083658053846705"
+        }
+      },
+      {
+        "token": {
+          "name": "IBC - Injective",
+          "denom": "IBC.INJ",
+          "id": "6536abc12a964e6ef10785d0",
+          "display_id": "6536aae82a964e6ef1072218",
+          "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png",
+          "latest_price": "17.93456664830433",
+          "price_24h_change": "-0.24663601699866433",
+          "chain_properties": null,
+          "extended_information": {
+            "description": "IBC representation token of Injective.\nThe INJ token is the native governance token for the Injective chain.",
+            "categories": [],
+            "url_learn_more": null
+          },
+          "addresses": {
+            "KUJIRA": {
+              "type": "native_token",
+              "value": "IBC/2B3C2BB9C5EC38FD6913A8FDC1BCD99439063C746007770D4FF32D5690073159",
+              "decimals": 18
+            }
+          }
+        },
+        "stats": {
+          "market_cap": "18.044583400257252",
+          "total_liquidity": null,
+          "price_oracles": null,
+          "last_24_hour_price": "18.291219417255917",
+          "last_24_hour_change": "-0.24663601699866433",
+          "last_24_hour_change_percentage": "-1.3483847707058203",
+          "last_7_day_price": "19.582036587935363",
+          "last_7_day_change": "-1.6474699396310335",
+          "last_7_day_change_percentage": "-8.413169550740463"
+        }
+      },
+      {
+        "token": {
+          "name": "IBC - pSTAKE Finance",
+          "denom": "IBC.PSTAKE",
+          "id": "6536abc12a964e6ef10785d1",
+          "display_id": "6536aae72a964e6ef10721ea",
+          "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/persistence/images/pstake.png",
+          "latest_price": "0.08224622100000001",
+          "price_24h_change": "-0.0008482555000000197",
+          "chain_properties": null,
+          "extended_information": {
+            "description": "IBC representation token of pSTAKE Finance.\npSTAKE is a liquid staking protocol unlocking the liquidity of staked assets.",
+            "categories": [],
+            "url_learn_more": null
+          },
+          "addresses": {
+            "KUJIRA": {
+              "type": "native_token",
+              "value": "IBC/24DD547340629EACCFEFDE8461A0A40769239CBC9E2ADB2ED0C51C324EEB93A7",
+              "decimals": 18
+            }
+          }
+        },
+        "stats": {
+          "market_cap": "0.03407755915688181",
+          "total_liquidity": null,
+          "price_oracles": null,
+          "last_24_hour_price": "0.0832112544",
+          "last_24_hour_change": "-0.0008482555000000197",
+          "last_24_hour_change_percentage": "-1.0193999671275407",
+          "last_7_day_price": "0.1102986062",
+          "last_7_day_change": "-0.028052385199999988",
+          "last_7_day_change_percentage": "-25.43312754934884"
+        }
+      },
+      {
+        "token": {
+          "name": "IBC - USD Coin",
+          "denom": "IBC.USDC",
+          "id": "6536abc12a964e6ef10785d2",
+          "display_id": "6536aae72a964e6ef10721e4",
+          "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/usdc.png",
+          "latest_price": "0.9733246647174509",
+          "price_24h_change": "0.0013456382568164393",
+          "chain_properties": null,
+          "extended_information": {
+            "description": "IBC representation token of USD Coin.\nCircle's stablecoin on Axelar",
+            "categories": [],
+            "url_learn_more": null
+          },
+          "addresses": {
+            "KUJIRA": {
+              "type": "native_token",
+              "value": "IBC/295548A78785A1007F232DE286149A6FF512F180AF5657780FC89C009E2C348F",
+              "decimals": 6
+            }
+          }
+        },
+        "stats": {
+          "market_cap": "1276308.2355355031",
+          "total_liquidity": null,
+          "price_oracles": null,
+          "last_24_hour_price": "0.973716790786522",
+          "last_24_hour_change": "0.0013456382568164393",
+          "last_24_hour_change_percentage": "0.1381960616833453",
+          "last_7_day_price": "0.9684016419111907",
+          "last_7_day_change": "0.004923022806260224",
+          "last_7_day_change_percentage": "0.5083658053846705"
+        }
+      }
+    ],
+    "total": 496
+  }

@@ -1,0 +1,59 @@
+{
+    "name": "Kujira",
+    "denom": "KUJI",
+    "id": "6536aae7e88d67ced04b72f0",
+    "display_id": "6536aae7e88d67ced04b72f0",
+    "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/tokens/Kujira.png",
+    "latest_price": "0.5063248656209793",
+    "price_24h_change": "-0.008341385425141956",
+    "chain_properties": {
+      "chain": "KUJIRA",
+      "id": {
+        "type": "native_token",
+        "value": "UKUJI"
+      },
+      "decimals": 6
+    },
+    "extended_information": {
+      "description": "Kujira is committed to levelling the playing field in decentralized finance by building dApps for regular crypto users.",
+      "categories": [
+        "Cosmos Ecosystem",
+        "Arbitrum Ecosystem",
+        "Optimism Ecosystem",
+        "Ethereum Ecosystem"
+      ],
+      "url_learn_more": null
+    },
+    "addresses": {
+      "MAYA": {
+        "type": "native_token",
+        "value": "KUJI",
+        "decimals": 8
+      },
+      "KUJIRA": {
+        "type": "native_token",
+        "value": "UKUJI",
+        "decimals": 6
+      },
+      "ETHEREUM": {
+        "type": "address",
+        "value": "0x96543ef8d2c75c26387c1a319ae69c0bee6f3fe7",
+        "decimals": 6
+      },
+      "ARBITRUM": {
+        "type": "address",
+        "value": "0x3a18dcc9745edcd1ef33ecb93b0b6eba5671e7ca",
+        "decimals": 6
+      },
+      "OPTIMISM": {
+        "type": "address",
+        "value": "0x3a18dcc9745edcd1ef33ecb93b0b6eba5671e7ca",
+        "decimals": 6
+      },
+      "TERITORI": {
+        "type": "native_token",
+        "value": "UKUJI",
+        "decimals": 6
+      }
+    }
+  }

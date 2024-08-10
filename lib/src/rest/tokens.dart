@@ -6,38 +6,7 @@ import '../dataclasses/schemas.dart';
 class TokenRestClient extends PulsarRestClient {
   TokenRestClient({required super.baseUrl, required super.headers});
 
-  Future<ExtendedToken> getTokenInfobyId({
-    required String tokenId,
-  }) async {
-    try {
-      final response = await call(
-        '/tokens/$tokenId',
-        'GET',
-      );
-      return ExtendedToken.fromJson(response);
-    } catch (e) {
-      rethrow;
-    }
-  }
-
-  Future<ExtendedToken> getTokenInfo({
-    required TokenType tokenType,
-    required String address,
-    required ChainKeys chain,
-  }) async {
-    try {
-      final response = await call(
-        '/token/$tokenType/$address',
-        'GET',
-        queryParams: {'chain': chain},
-      );
-      return ExtendedToken.fromJson(response);
-    } catch (e) {
-      rethrow;
-    }
-  }
-
-    Future<PaginatedTokens> listTokens({
+  Future<PaginatedTokens> listTokens({
     String? text,
     List<ChainKeys>? chains,
     int minimumLiquidity = 0,
@@ -65,6 +34,51 @@ class TokenRestClient extends PulsarRestClient {
         queryParams: paramsFiltered,
       );
       return PaginatedTokens.fromJson(response);
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  Future<ExtendedToken> getTokenInfo({
+    required TokenType tokenType,
+    required String address,
+    required ChainKeys chain,
+  }) async {
+    try {
+      final response = await call(
+        '/token/$tokenType/$address',
+        'GET',
+        queryParams: {'chain': chain},
+      );
+      return ExtendedToken.fromJson(response);
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  Future<ExtendedToken> getTokenInfoById({
+    required String tokenId,
+  }) async {
+    try {
+      final response = await call(
+        '/token/$tokenId',
+        'GET',
+      );
+      return ExtendedToken.fromJson(response);
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  Future<TokenPriceTimeseries> getTokenTimeseries(
+      {required String tokenId, required TierKeys tierName}) async {
+    try {
+      final response = await call(
+        '/tokens/$tokenId/timeseries',
+        'GET',
+        queryParams: {'tier_name': tierName},
+      );
+      return TokenPriceTimeseries.fromJson(response);
     } catch (e) {
       rethrow;
     }
