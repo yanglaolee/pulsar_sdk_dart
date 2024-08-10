@@ -38,7 +38,7 @@ void main() {
     test('getTokenTimeseries', () async {
       final tokenPriceTimeseries = await client.getTokenTimeseries(
         tokenId: '6536aae87228f5b310f281ae',
-        tierName: TierKeys.ONE_DAY
+        tier: TierKeys.ONE_DAY
       );
       
       print(tokenPriceTimeseries);

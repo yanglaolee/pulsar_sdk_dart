@@ -71,12 +71,12 @@ class TokenRestClient extends PulsarRestClient {
   }
 
   Future<TokenPriceTimeseries> getTokenTimeseries(
-      {required String tokenId, required TierKeys tierName}) async {
+      {required String tokenId, required TierKeys tier}) async {
     try {
       final response = await call(
         '/tokens/$tokenId/timeseries',
         'GET',
-        queryParams: {'tier_name': tierName},
+        queryParams: {'tier_name': tier},
       );
       return TokenPriceTimeseries.fromJson(response);
     } catch (e) {
