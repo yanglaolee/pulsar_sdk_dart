@@ -10,7 +10,7 @@ void main() {
 
   group('protocol client', () {
     test('listProtocols', () async {
-      final protocolDatas = await client.listProtocols(chain: ChainKeys.OSMOSIS);
+      final protocolDatas = await client.listProtocols(chain: ChainKeys.KUJIRA);
 
       print(protocolDatas);
     });

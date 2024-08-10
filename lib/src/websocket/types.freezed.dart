@@ -21,7 +21,7 @@ WalletBalancesData _$WalletBalancesDataFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$WalletBalancesData {
   String get address => throw _privateConstructorUsedError;
-  String get chain => throw _privateConstructorUsedError;
+  ChainKeys get chain => throw _privateConstructorUsedError;
   @JsonKey(name: 'ignore_cache')
   bool get ignoreCache => throw _privateConstructorUsedError;
   @JsonKey(name: 'hide_nfts')
@@ -55,7 +55,7 @@ abstract class $WalletBalancesDataCopyWith<$Res> {
   @useResult
   $Res call(
       {String address,
-      String chain,
+      ChainKeys chain,
       @JsonKey(name: 'ignore_cache') bool ignoreCache,
       @JsonKey(name: 'hide_nfts') Set<String> hideNFTs,
       @JsonKey(name: 'hide_tokens') Set<String> hideTokens,
@@ -98,7 +98,7 @@ class _$WalletBalancesDataCopyWithImpl<$Res, $Val extends WalletBalancesData>
       chain: null == chain
           ? _value.chain
           : chain // ignore: cast_nullable_to_non_nullable
-              as String,
+              as ChainKeys,
       ignoreCache: null == ignoreCache
           ? _value.ignoreCache
           : ignoreCache // ignore: cast_nullable_to_non_nullable
@@ -141,7 +141,7 @@ abstract class _$$WalletBalancesDataImplCopyWith<$Res>
   @useResult
   $Res call(
       {String address,
-      String chain,
+      ChainKeys chain,
       @JsonKey(name: 'ignore_cache') bool ignoreCache,
       @JsonKey(name: 'hide_nfts') Set<String> hideNFTs,
       @JsonKey(name: 'hide_tokens') Set<String> hideTokens,
@@ -182,7 +182,7 @@ class __$$WalletBalancesDataImplCopyWithImpl<$Res>
       chain: null == chain
           ? _value.chain
           : chain // ignore: cast_nullable_to_non_nullable
-              as String,
+              as ChainKeys,
       ignoreCache: null == ignoreCache
           ? _value.ignoreCache
           : ignoreCache // ignore: cast_nullable_to_non_nullable
@@ -241,7 +241,7 @@ class _$WalletBalancesDataImpl implements _WalletBalancesData {
   @override
   final String address;
   @override
-  final String chain;
+  final ChainKeys chain;
   @override
   @JsonKey(name: 'ignore_cache')
   final bool ignoreCache;
@@ -343,7 +343,7 @@ class _$WalletBalancesDataImpl implements _WalletBalancesData {
 abstract class _WalletBalancesData implements WalletBalancesData {
   const factory _WalletBalancesData(
       {required final String address,
-      required final String chain,
+      required final ChainKeys chain,
       @JsonKey(name: 'ignore_cache') final bool ignoreCache,
       @JsonKey(name: 'hide_nfts') final Set<String> hideNFTs,
       @JsonKey(name: 'hide_tokens') final Set<String> hideTokens,
@@ -359,7 +359,7 @@ abstract class _WalletBalancesData implements WalletBalancesData {
   @override
   String get address;
   @override
-  String get chain;
+  ChainKeys get chain;
   @override
   @JsonKey(name: 'ignore_cache')
   bool get ignoreCache;
@@ -397,7 +397,7 @@ TimeseriesData _$TimeseriesDataFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$TimeseriesData {
   String get address => throw _privateConstructorUsedError;
-  String get chain => throw _privateConstructorUsedError;
+  ChainKeys get chain => throw _privateConstructorUsedError;
   String get tier => throw _privateConstructorUsedError;
 
   /// Serializes this TimeseriesData to a JSON map.
@@ -416,7 +416,7 @@ abstract class $TimeseriesDataCopyWith<$Res> {
           TimeseriesData value, $Res Function(TimeseriesData) then) =
       _$TimeseriesDataCopyWithImpl<$Res, TimeseriesData>;
   @useResult
-  $Res call({String address, String chain, String tier});
+  $Res call({String address, ChainKeys chain, String tier});
 }
 
 /// @nodoc
@@ -446,7 +446,7 @@ class _$TimeseriesDataCopyWithImpl<$Res, $Val extends TimeseriesData>
       chain: null == chain
           ? _value.chain
           : chain // ignore: cast_nullable_to_non_nullable
-              as String,
+              as ChainKeys,
       tier: null == tier
           ? _value.tier
           : tier // ignore: cast_nullable_to_non_nullable
@@ -463,7 +463,7 @@ abstract class _$$TimeseriesDataImplCopyWith<$Res>
       __$$TimeseriesDataImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String address, String chain, String tier});
+  $Res call({String address, ChainKeys chain, String tier});
 }
 
 /// @nodoc
@@ -491,7 +491,7 @@ class __$$TimeseriesDataImplCopyWithImpl<$Res>
       chain: null == chain
           ? _value.chain
           : chain // ignore: cast_nullable_to_non_nullable
-              as String,
+              as ChainKeys,
       tier: null == tier
           ? _value.tier
           : tier // ignore: cast_nullable_to_non_nullable
@@ -513,7 +513,7 @@ class _$TimeseriesDataImpl implements _TimeseriesData {
   @override
   final String address;
   @override
-  final String chain;
+  final ChainKeys chain;
   @override
   final String tier;
 
@@ -556,7 +556,7 @@ class _$TimeseriesDataImpl implements _TimeseriesData {
 abstract class _TimeseriesData implements TimeseriesData {
   const factory _TimeseriesData(
       {required final String address,
-      required final String chain,
+      required final ChainKeys chain,
       required final String tier}) = _$TimeseriesDataImpl;
 
   factory _TimeseriesData.fromJson(Map<String, dynamic> json) =
@@ -565,7 +565,7 @@ abstract class _TimeseriesData implements TimeseriesData {
   @override
   String get address;
   @override
-  String get chain;
+  ChainKeys get chain;
   @override
   String get tier;
 

@@ -63,7 +63,7 @@ class PulsarRestClient {
 
     print(fullPath);
 
-    // send HTTP request
+    // send HTTP request and handle response
     try {
       final requst = http.Request(httpMethod, Uri.parse(fullPath))
         ..headers.addAll(headers)
@@ -77,6 +77,7 @@ class PulsarRestClient {
         final error = respBody['error'];
         throw APIError(message: error ?? respBody.toString(), statusCode: respCode);
       }
+      
       return respBody;
 
     } catch (e) {

@@ -25,7 +25,7 @@ class WalletBalancesClient {
 
     final requestId = Uuid().v4();
     final data =
-        WalletBalancesData(address: walletAddr, chain: chain.toString());
+        WalletBalancesData(address: walletAddr, chain: chain);
     final msg = BalancesMessage(
         method: 'COMMAND',
         requestId: requestId,
@@ -49,7 +49,7 @@ class WalletBalancesClient {
 
     final requestId = Uuid().v4();
     final data =
-        TimeseriesData(address: walletAddr, chain: chain.toString(), tier: tier.toString());
+        TimeseriesData(address: walletAddr, chain: chain, tier: tier.toString());
     final msg = TimeseriesMessage(
         method: 'COMMAND',
         requestId: requestId,

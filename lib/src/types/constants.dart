@@ -1,3 +1,3 @@
 // ignore_for_file: constant_identifier_names
 
-const DEFAULT_TIMEOUT = 120;
+const DEFAULT_TIMEOUT = 15;

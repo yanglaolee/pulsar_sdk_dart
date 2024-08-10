@@ -1,6 +1,8 @@
 
 // ignore_for_file: invalid_annotation_target
 
+import '../types/enums.dart';
+
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'types.freezed.dart';
@@ -15,7 +17,7 @@ class WalletBalancesData extends Data with _$WalletBalancesData {
   @JsonSerializable(explicitToJson: true)
   const factory WalletBalancesData({
     required String address,
-    required String chain,
+    required ChainKeys chain,
     @JsonKey(name: 'ignore_cache') @Default(false) bool ignoreCache,
     @JsonKey(name: 'hide_nfts') @Default(<String>{}) Set<String> hideNFTs,
     @JsonKey(name: 'hide_tokens') @Default(<String>{}) Set<String> hideTokens,
@@ -34,7 +36,7 @@ class TimeseriesData extends Data with _$TimeseriesData {
   @JsonSerializable(explicitToJson: true)
   const factory TimeseriesData({
     required String address,
-    required String chain,
+    required ChainKeys chain,
     required String tier,
   }) = _TimeseriesData;
 

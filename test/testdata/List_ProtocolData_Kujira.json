@@ -1,0 +1,534 @@
+[
+  {
+    "key": "CALC",
+    "name": "CALC",
+    "chains": [
+      "OSMOSIS",
+      "NEUTRON",
+      "KUJIRA"
+    ],
+    "image": "https://app.calculated.fi/images/logo.svg",
+    "url": "https://app.calculated.fi/strategies/",
+    "recipes": {
+      "KUJIRA": [
+        {
+          "key": "CALC_DCA_STRATEGY_KUJIRA",
+          "name": "DCA Strategies",
+          "chain": "KUJIRA"
+        }
+      ],
+      "OSMOSIS": [
+        {
+          "key": "CALC_DCA_STRATEGY_OSMOSIS",
+          "name": "DCA Strategies",
+          "chain": "OSMOSIS"
+        }
+      ],
+      "NEUTRON": [
+        {
+          "key": "CALC_DCA_STRATEGY_NEUTRON",
+          "name": "DCA Strategies",
+          "chain": "NEUTRON"
+        }
+      ]
+    },
+    "integration_types": [
+      "STAKING"
+    ],
+    "categories": null,
+    "tags": [],
+    "description": null,
+    "twitter_url": null,
+    "telegram_url": null
+  },
+  {
+    "key": "FUZION",
+    "name": "FUZION",
+    "chains": [
+      "KUJIRA"
+    ],
+    "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/protocols/fuzion.ico",
+    "url": "https://dashboard.fuzion.app",
+    "recipes": {
+      "KUJIRA": [
+        {
+          "key": "FUZION_LIMIT_ORDERS_KUJIRA",
+          "name": "Limit Orders",
+          "chain": "KUJIRA"
+        },
+        {
+          "key": "FUZION_YFZUN_STAKING",
+          "name": "YFuzn Stake",
+          "chain": "KUJIRA"
+        },
+        {
+          "key": "FUZION_FUZN_STAKING",
+          "name": "Fuzn Stake",
+          "chain": "KUJIRA"
+        }
+      ]
+    },
+    "integration_types": [
+      "FARMING",
+      "ORDER_BOOK",
+      "STAKING"
+    ],
+    "categories": null,
+    "tags": [],
+    "description": null,
+    "twitter_url": null,
+    "telegram_url": null
+  },
+  {
+    "key": "FIN",
+    "name": "FIN",
+    "chains": [
+      "KUJIRA"
+    ],
+    "image": "https://fin.kujira.app/assets/kujira-round@3x.d75682e8.png",
+    "url": "https://fin.kujira.app/trade/kujira14hj2tavq8fpesdwxxcu44rty3hh90vhujrvcmstl4zr3txmfvw9sl4e867",
+    "recipes": {
+      "KUJIRA": [
+        {
+          "key": "FIN_LIMIT_ORDERS_KUJIRA",
+          "name": "Kujira Limit Orders",
+          "chain": "KUJIRA"
+        }
+      ]
+    },
+    "integration_types": [
+      "ORDER_BOOK"
+    ],
+    "categories": null,
+    "tags": [],
+    "description": null,
+    "twitter_url": null,
+    "telegram_url": null
+  },
+  {
+    "key": "BOW",
+    "name": "BOW",
+    "chains": [
+      "KUJIRA"
+    ],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQijy_eJwVeDs63PjFA3aMZIJgOxfay4oLKokPDnQyv7KseAqZ4E2aAMP0Swmz-gT70msk&usqp=CAU",
+    "url": "https://bow.kujira.app",
+    "recipes": {
+      "KUJIRA": [
+        {
+          "key": "BOW_USK_MULTI_STAKE",
+          "name": "USK Multi-Staking",
+          "chain": "KUJIRA"
+        },
+        {
+          "key": "BOW_LIQUIDITY_POOLS_KUJIRA",
+          "name": "Kujira Bow Liquidity Pools",
+          "chain": "KUJIRA"
+        },
+        {
+          "key": "BOW_FARMS_KUJIRA",
+          "name": "Kujira Bow Farms",
+          "chain": "KUJIRA"
+        }
+      ]
+    },
+    "integration_types": [
+      "FARMING",
+      "LIQUIDITY_POOL"
+    ],
+    "categories": null,
+    "tags": [],
+    "description": null,
+    "twitter_url": null,
+    "telegram_url": null
+  },
+  {
+    "key": "AQLA",
+    "name": "AQLA",
+    "chains": [
+      "KUJIRA"
+    ],
+    "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/protocols/AQLA.png",
+    "url": "https://aqla.app/stake",
+    "recipes": {
+      "KUJIRA": [
+        {
+          "key": "AQLA_STAKE_KUJIRA",
+          "name": "Stake",
+          "chain": "KUJIRA"
+        }
+      ]
+    },
+    "integration_types": [
+      "STAKING"
+    ],
+    "categories": null,
+    "tags": [],
+    "description": null,
+    "twitter_url": null,
+    "telegram_url": null
+  },
+  {
+    "key": "GHOST",
+    "name": "GHOST",
+    "chains": [
+      "KUJIRA"
+    ],
+    "image": "https://ghost.kujira.app/assets/favicon.bcdfeb74.png",
+    "url": "https://ghost.kujira.app/",
+    "recipes": {
+      "KUJIRA": [
+        {
+          "key": "GHOST_LEND_KUJIRA",
+          "name": "Ghost Lend",
+          "chain": "KUJIRA"
+        },
+        {
+          "key": "GHOST_BORROW_KUJIRA",
+          "name": "Ghost Borrow",
+          "chain": "KUJIRA"
+        }
+      ]
+    },
+    "integration_types": [
+      "BORROW_AND_LENDING",
+      "STAKING"
+    ],
+    "categories": null,
+    "tags": [],
+    "description": null,
+    "twitter_url": null,
+    "telegram_url": null
+  },
+  {
+    "key": "QUARK",
+    "name": "QUARK",
+    "chains": [
+      "KUJIRA"
+    ],
+    "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/protocols/quark.png",
+    "url": "https://quarkprotocol.com/",
+    "recipes": {
+      "KUJIRA": [
+        {
+          "key": "KUJIRA_QUARK_STAKE",
+          "name": "Liquid Stake",
+          "chain": "KUJIRA"
+        }
+      ]
+    },
+    "integration_types": [
+      "STAKING"
+    ],
+    "categories": null,
+    "tags": [],
+    "description": null,
+    "twitter_url": null,
+    "telegram_url": null
+  },
+  {
+    "key": "KUJIRA_ORCA",
+    "name": "KUJIRA ORCA",
+    "chains": [
+      "KUJIRA"
+    ],
+    "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/protocols/kujira_orca_logo.png",
+    "url": "https://orca.kujira.app/",
+    "recipes": {
+      "KUJIRA": [
+        {
+          "key": "KUJIRA_ORCA_LIQ_MARKET_V1",
+          "name": "Kujira Orca Liquidations Market",
+          "chain": "KUJIRA"
+        }
+      ]
+    },
+    "integration_types": [
+      "STAKING"
+    ],
+    "categories": null,
+    "tags": [],
+    "description": null,
+    "twitter_url": null,
+    "telegram_url": null
+  },
+  {
+    "key": "MANTADAO",
+    "name": "MANTADAO",
+    "chains": [
+      "KUJIRA"
+    ],
+    "image": "https://mantadao.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogoicon.88d4ec2c.png&w=32&q=75",
+    "url": "https://mantadao.app/",
+    "recipes": {
+      "KUJIRA": [
+        {
+          "key": "MANTADAO_STAKE",
+          "name": "MantaDao Stake",
+          "chain": "KUJIRA"
+        }
+      ]
+    },
+    "integration_types": [
+      "STAKING"
+    ],
+    "categories": null,
+    "tags": [],
+    "description": null,
+    "twitter_url": null,
+    "telegram_url": null
+  },
+  {
+    "key": "DAO DAO",
+    "name": "DAO DAO",
+    "chains": [
+      "MIGALOO",
+      "STARGAZE",
+      "OSMOSIS",
+      "NEUTRON",
+      "JUNO",
+      "KUJIRA"
+    ],
+    "image": "https://pulsar-images.s3.eu-west-1.amazonaws.com/protocols/daodao_logo.png",
+    "url": "https://daodao.zone/home",
+    "recipes": {
+      "JUNO": [
+        {
+          "key": "DAO_DAO_GOVERNANCE_JUNO_2",
+          "name": "Governance",
+          "chain": "JUNO"
+        },
+        {
+          "key": "DAO_DAO_GOVERNANCE_JUNO",
+          "name": "DAO DAO Governance",
+          "chain": "JUNO"
+        }
+      ],
+      "STARGAZE": [
+        {
+          "key": "DAO_DAO_GOVERNANCE_STARGAZE",
+          "name": "Governance",
+          "chain": "STARGAZE"
+        }
+      ],
+      "MIGALOO": [
+        {
+          "key": "DAO_DAO_GOVERNANCE_MIGALOO",
+          "name": "Governance",
+          "chain": "MIGALOO"
+        }
+      ],
+      "KUJIRA": [
+        {
+          "key": "DAO_DAO_GOVERNANCE_KUJIRA",
+          "name": "Governance",
+          "chain": "KUJIRA"
+        }
+      ],
+      "NEUTRON": [
+        {
+          "key": "DAO_DAO_GOVERNANCE_NEUTRON",
+          "name": "Governance",
+          "chain": "NEUTRON"
+        }
+      ],
+      "OSMOSIS": [
+        {
+          "key": "DAO_DAO_GOVERNANCE_OSMOSIS",
+          "name": "Osmosis DAO DAO Governance",
+          "chain": "OSMOSIS"
+        },
+        {
+          "key": "DAO_DAO_GOVERNANCE_OSMOSIS_2",
+          "name": "Governance",
+          "chain": "OSMOSIS"
+        }
+      ]
+    },
+    "integration_types": [
+      "STAKING"
+    ],
+    "categories": null,
+    "tags": [],
+    "description": null,
+    "twitter_url": null,
+    "telegram_url": null
+  },
+  {
+    "key": "BLUE",
+    "name": "Blue",
+    "chains": [
+      "KUJIRA"
+    ],
+    "image": "https://raw.githubusercontent.com/cosmos/chain-registry/master/kujira/images/kuji.png",
+    "url": "https://blue.kujira.app",
+    "recipes": {
+      "KUJIRA": [
+        {
+          "key": "KUJIRA_DEL_STAKE",
+          "name": "Kujira Delegation Stake",
+          "chain": "KUJIRA"
+        },
+        {
+          "key": "BLUE_USK_MINT_KUJIRA",
+          "name": "USK Mint",
+          "chain": "KUJIRA"
+        }
+      ]
+    },
+    "integration_types": [
+      "BORROW_AND_LENDING",
+      "STAKING"
+    ],
+    "categories": null,
+    "tags": [],
+    "description": null,
+    "twitter_url": null,
+    "telegram_url": null
+  },
+  {
+    "key": "ERIS",
+    "name": "ERIS",
+    "chains": [
+      "MIGALOO",
+      "INJECTIVE",
+      "OSMOSIS",
+      "JUNO",
+      "TERRA2",
+      "KUJIRA"
+    ],
+    "image": "https://www.erisprotocol.com/assets/favicon_light.svg",
+    "url": "https://www.erisprotocol.com/#/terra/amplifier",
+    "recipes": {
+      "CHIHUAHUA": [
+        {
+          "key": "ERIS_STAKE_CHIHUAHUA",
+          "name": "Eris Amplifier",
+          "chain": "CHIHUAHUA"
+        }
+      ],
+      "KUJIRA": [
+        {
+          "key": "ERIS_STAKE_KUJIRA",
+          "name": "Eris Amplifier",
+          "chain": "KUJIRA"
+        },
+        {
+          "key": "KUJIRA_ERIS_GOVERNANCE",
+          "name": "Governance",
+          "chain": "KUJIRA"
+        }
+      ],
+      "TERRA": [
+        {
+          "key": "ERIS_STAKE_TERRA",
+          "name": "Eris Amplifier",
+          "chain": "TERRA"
+        }
+      ],
+      "MIGALOO": [
+        {
+          "key": "ERIS_STAKE_MIGALOO",
+          "name": "Eris Amplifier",
+          "chain": "MIGALOO"
+        },
+        {
+          "key": "ERIS_GOV_MIGALOO",
+          "name": "White Whale Governance",
+          "chain": "MIGALOO"
+        }
+      ],
+      "ARCHWAY": [
+        {
+          "key": "ERIS_STAKE_ARCHWAY",
+          "name": "Eris Amplifier",
+          "chain": "ARCHWAY"
+        },
+        {
+          "key": "ARCHWAY_ERIS_GOVERNANCE",
+          "name": "Governance",
+          "chain": "ARCHWAY"
+        }
+      ],
+      "INJECTIVE": [
+        {
+          "key": "ERIS_STAKE_INJECTIVE",
+          "name": "Eris Amplifier",
+          "chain": "INJECTIVE"
+        },
+        {
+          "key": "INJ_ERIS_GOVERNANCE",
+          "name": "Governance",
+          "chain": "INJECTIVE"
+        }
+      ],
+      "TERRA2": [
+        {
+          "key": "ERIS_STAKE_TERRA2",
+          "name": "Eris Amplifier",
+          "chain": "TERRA2"
+        },
+        {
+          "key": "ERIS_GOVERNANCE_TERRA2",
+          "name": "Eris Governance",
+          "chain": "TERRA2"
+        },
+        {
+          "key": "ERIS_COMPOUND_TERRA2",
+          "name": "Eris Compound",
+          "chain": "TERRA2"
+        },
+        {
+          "key": "ERIS_ARBITRAGE_VAULT_TERRA2",
+          "name": "Eris Arbitrage Vault",
+          "chain": "TERRA2"
+        }
+      ],
+      "SEI": [
+        {
+          "key": "ERIS_STAKE_SEI",
+          "name": "Eris Amplifier",
+          "chain": "SEI"
+        },
+        {
+          "key": "SEI_ERIS_GOVERNANCE",
+          "name": "Governance",
+          "chain": "SEI"
+        }
+      ],
+      "OSMOSIS": [
+        {
+          "key": "ERIS_STAKE_OSMO",
+          "name": "Eris Amplifier",
+          "chain": "OSMOSIS"
+        },
+        {
+          "key": "OSMO_ERIS_GOVERNANCE",
+          "name": "Governance",
+          "chain": "OSMOSIS"
+        }
+      ],
+      "JUNO": [
+        {
+          "key": "ERIS_STAKE_JUNO",
+          "name": "Eris Amplifier",
+          "chain": "JUNO"
+        },
+        {
+          "key": "JUNO_ERIS_GOVERNANCE",
+          "name": "Governance",
+          "chain": "JUNO"
+        }
+      ]
+    },
+    "integration_types": [
+      "FARMING",
+      "STAKING"
+    ],
+    "categories": null,
+    "tags": [],
+    "description": null,
+    "twitter_url": null,
+    "telegram_url": null
+  }
+]
