@@ -3,10 +3,12 @@
 import 'dart:async';
 import 'dart:convert';
 
+import 'package:logger/logger.dart';
 import 'package:web_socket_client/web_socket_client.dart';
 
 import 'types.dart';
 import 'encryption.dart';
+import '../helper.dart';
 import '../types/constants.dart';
 import '../types/exceptions.dart';
 import '../dataclasses/schemas.dart';
@@ -35,92 +37,194 @@ class MessageFuture {
 class WebSocketClient {
   final String apiKey;
   final String baseUrl;
+  late Logger? logger;
 
-  final Map<String, Function> callbackHandler = {};
+  WebSocket? _wsConn;
+
+  final Map<String, Function> callbackHandlers = {};
   final Map<String, List<MessageFuture>> messageFutures = {};
-
-  WebSocket? wsConn;
-  bool wsConnIsOpen = false;
-  // bool wsConnIsClosing = false;
 
   WebSocketClient({
     required this.apiKey,
     required this.baseUrl,
+    this.logger,
   });
 
-  WebSocket createWebSocketConn() {
+  /// Create a new Websocket connection
+  Future<WebSocket> _createNewConn([int attempt = 1]) async {
+    if (attempt > 3) {
+      throw APIError(
+          message: 'Failed to connect to WebSocket after multiple attempts',
+          statusCode: 500);
+    }
+
     final dataToSend = jsonEncode({
       'api_key': apiKey,
       'timestamp': DateTime.now().millisecondsSinceEpoch / 1000,
     });
-
     final accessToken = encryptMessage(dataToSend);
     final urlwithAPIKey =
         '$baseUrl?access_token=${Uri.encodeComponent(accessToken)}';
+    _wsConn = WebSocket(Uri.parse(urlwithAPIKey));
 
-    return WebSocket(Uri.parse(urlwithAPIKey),
-        headers: {
-          'Upgrade': 'websocket',
-          'Connection': 'Upgrade',
-          'Sec-WebSocket-Key': 'dGhlIHNhbXBsZSBub25jZQ==',
-          'Sec-WebSocket-Version': 13
+    final completer = Completer<WebSocket>();
+
+    // Reconnect every 10 seconds, up to 3 times
+    final timeout = Timer(Duration(seconds: 10), () {
+      _wsConn?.close();
+      if (attempt < 3) {
+        logger?.d('timer reconnect: ${attempt + 1}');
+        completer.complete(_createNewConn(attempt + 1));
+      } else {
+        completer.completeError(
+            APIError(message: 'WebSocket connection timeout', statusCode: 408));
+      }
+    });
+
+    // Setup callback function:
+    // 1. incoming response callback
+    _wsConn!.messages.listen(
+        (event) {
+          final respData = jsonDecode(event);
+          final requestID = respData['event']['request_id'];
+
+          logger?.d('Process incoming response, requestID: $requestID');
+
+          if (callbackHandlers.containsKey(requestID)) {
+            logger?.d('Call handler for response: $requestID');
+            callbackHandlers[requestID]!(respData);
+          }
         },
-        timeout: Duration(seconds: DEFAULT_TIMEOUT));
+        onDone: () => logger?.i('Response stream is done.'),
+        onError: (event) {
+          logger?.e('Incoming response error');
+          _handleWebSocketClosure(jsonDecode(event));
+        });
+
+    // 2. connected callback
+    _wsConn!.connection.firstWhere((state) => state == Connected()).then((_) {
+      timeout.cancel();
+      completer.complete(_wsConn);
+    }).catchError((error) {
+      timeout.cancel();
+      if (attempt < 3) {
+        completer.complete(_createNewConn(attempt + 1));
+      } else {
+        completer.completeError(
+            APIError(message: 'WebSocket connection timeout', statusCode: 408));
+      }
+    });
+
+    return completer.future;
   }
 
   Future<void> transitionToOpen() async {
-    if (wsConn != null && wsConnIsOpen == true) {
+    if (_wsConn == null) {
+      await _createNewConn();
       return;
     }
 
+    switch (_wsConn!.connection.state) {
+      case Connecting():
+        await _waitForState(Connected());
+
+      case Connected():
+        break;
+
+      case Disconnecting():
+        await _waitForState(Disconnected());
+
+      case Disconnected():
+        _createNewConn();
+        await _waitForState(Connected());
+        break;
+
+      case Reconnecting():
+        await _waitForState(Reconnected());
+
+      case Reconnected():
+        break;
+
+      default:
+        throw APIError(
+            message: 'Unkown websocket connection state', statusCode: 500);
+    }
+  }
+
+  Future<void> transitionToClose() async {
+    if (_wsConn == null) return;
+
+    switch (_wsConn!.connection.state) {
+      case Connecting():
+        await _waitForState(Connected());
+        _wsConn!.close(1000, 'Normal closure');
+        await _waitForState(Disconnected());
+        break;
+
+      case Connected():
+        _wsConn!.close(1000, 'Normal closure');
+        await _waitForState(Disconnected());
+        break;
+
+      case Disconnecting():
+        await _waitForState(Disconnected());
+
+      case Disconnected():
+        break;
+
+      case Reconnecting():
+        await _waitForState(Reconnected());
+
+      case Reconnected():
+        _wsConn!.close(1000, 'Normal closure');
+        await _waitForState(Disconnected());
+        break;
+
+      default:
+        throw APIError(
+            message: 'Unkown websocket connection state', statusCode: 500);
+    }
+  }
+
+  Future<void> _waitForState(ConnectionState desiredState) async {
+    await waitForCondition(
+        () => _wsConn!.connection.state == desiredState, 10000);
+  }
+
+  Map<String, dynamic> _getEventMap(Map<String, dynamic> response) {
+    final eventMap = response['event'];
+    if (eventMap == null) {
+      throw WrongResponseFormat("Response does not contain 'event' map.");
+    }
+    if (eventMap is! Map<String, dynamic>) {
+      throw WrongResponseFormat("Response 'event' is not a map.");
+    }
+    if (eventMap['request_id'] == null) {
+      throw WrongResponseFormat(
+          "Response 'event' map does not contain 'request_id' key.");
+    }
+    return eventMap;
+  }
+
+  dynamic _processPayload(
+      String payloadType, Map<String, dynamic> payloadData) {
     try {
-      wsConn = createWebSocketConn();
-      print('wait for ws conn ready.');
-
-      //TODO: can not connect server, don't know why
-      wsConn!.connection.forEach(print);
-      // Instance of 'Connecting'
-      // Instance of 'Disconnected'
-      // Instance of 'Reconnecting'
-      // TimeoutException after 0:00:30.000000
-      await wsConn!.connection.firstWhere((state) => state is Connected);
+      if (payloadType.startsWith('Timeseries')) {
+        return Timeseries.fromJson(payloadData);
+      } else if (payloadType.startsWith('AggregateWalletIntegrations')) {
+        return WalletIntegrations.fromJson(payloadData);
+      } else if (payloadType.startsWith('NFTItem')) {
+        return WalletNFTs.fromJson(payloadData);
+      } else if (payloadType.startsWith('AggregateWalletTokens')) {
+        return WalletTokens.fromJson(payloadData);
+      }
     } catch (e) {
-      print(e.toString());
-      rethrow;
-    }
-    print('ws conn ready.');
-    wsConnIsOpen = true;
-  }
-
-  Future<void> transitionToClosed() async {
-    if (wsConn != null && wsConnIsOpen == true) {
-      wsConn!.close();
-      wsConnIsOpen = false;
-    }
-  }
-
-  Stream<dynamic> handleResponse(
-      String requestId, Message msg, String finishedEventType) async* {
-    await transitionToOpen();
-
-    _setupCallbackHandler(requestId, finishedEventType);
-
-    // wsConn!.stream.listen((message) {
-    // print(message);
-    // });
-
-    await for (final msg in wsConn!.messages) {
-      print(msg);
-      yield msg;
+      throw SerializationError(
+          'An error occurred during serialization: $e\n Serializing $payloadType.');
     }
 
-    // try {
-    //   await for (final message in _sendMessageAndProcess(requestId, msg)) {
-    //     yield message;
-    //   }
-    // }finally {
-    //       _performCleanup(requestId);
-    //   }
+    throw SerializationError(
+        'No serializer found for payload type $payloadType');
   }
 
   void _setupCallbackHandler(String requestId, String finishedEventType) {
@@ -130,12 +234,12 @@ class WebSocketClient {
       final eventMap = _getEventMap(message);
       var currentMsgFutrue = messageFutures[requestId]!.last;
 
-      if (eventMap.containsKey('error_message')) {
+      if (eventMap['error_message'] != null) {
         currentMsgFutrue.setException(
             APIError(message: eventMap['error_message'], statusCode: 500));
         return;
       }
-      if (eventMap.containsKey('is_error')) {
+      if (eventMap['is_error'] == true) {
         currentMsgFutrue.setException(APIError(
             message: 'An error occurred while processing the request',
             statusCode: 500));
@@ -153,18 +257,41 @@ class WebSocketClient {
       }
 
       messageFutures[requestId]!.add(MessageFuture());
-      final item = _processPayload(eventPayload['type'], eventPayload['data']);
+      final payload = eventPayload['data'];
+      final item = _processPayload(
+          eventPayload['type'], payload is List ? payload[0] : payload);
       currentMsgFutrue.setResult(item);
     }
 
-    this.callbackHandler[requestId] = callbackHandler;
+    callbackHandlers[requestId] = callbackHandler;
   }
 
-  Stream<dynamic> sendMessageAndProcess(String requestId, Message msg) async* {
+  Stream<dynamic> handleResponse(
+      String requestId, Message msg, String finishedEventType) async* {
+    await transitionToOpen();
+    logger?.d('Transition websocket connection to open.');
+    
+    _setupCallbackHandler(requestId, finishedEventType);
+    logger?.d('Setup callback handler.');
+
     try {
-      await sendMessage(msg);
+      await for (final message in _sendMessageAndProcess(requestId, msg)) {
+        yield message;
+      }
+    } finally {
+      logger?.d('No more msg from server, perform final Cleanup');
+      _performCleanup(requestId);
+    }
+  }
+
+  Stream<dynamic> _sendMessageAndProcess(String requestId, Message msg) async* {
+    try {
+      await _sendMessage(msg);
+      logger?.d('Send msg to websocket server, requestID: $requestId');
       while (true) {
-        var message = await waitForMessage(requestId);
+        var message = await _waitForResponse(requestId);
+        logger?.d('Recv msg from server, msg: $message');
+
         if (message == NO_MORE_MESSAGES_IN_WEBSOCKET) {
           break;
         }
@@ -179,88 +306,69 @@ class WebSocketClient {
     }
   }
 
-  Future<void> sendMessage(Message msg) async {
+  Future<void> _sendMessage(Message msg) async {
     await transitionToOpen();
 
-    if (wsConn == null) {
-      throw APIError(
-          message: 'Failed to connect to WebSocket.', statusCode: 500);
-    }
-
     if (msg is BalancesMessage) {
-      wsConn!.send(jsonEncode(msg.toJson()));
+      _wsConn!.send(jsonEncode(msg.toJson()));
     } else if (msg is TimeseriesMessage) {
-      wsConn!.send(jsonEncode(msg.toJson()));
+      _wsConn!.send(jsonEncode(msg.toJson()));
     } else {
       throw SerializationError(
           'No serializer found for message type ${msg.runtimeType}');
     }
   }
 
-  Future<dynamic> waitForMessage(String requestId) async {
+  Future<dynamic> _waitForResponse(String requestId) async {
     var messageFuture = messageFutures[requestId]![0];
     try {
-      var message =
+      var response =
           await messageFuture.get().timeout(Duration(seconds: DEFAULT_TIMEOUT));
       messageFutures[requestId]!.removeAt(0);
-      return message;
+      return response;
     } on TimeoutException {
       throw APIError(message: "WebSocket response timeout.", statusCode: 408);
-    } on APIError {
+    } catch (e) {
       rethrow;
     }
   }
 
-  static Map<String, dynamic> _getEventMap(Map<String, dynamic> response) {
-    final eventMap = response['event'];
-    if (eventMap == null) {
-      throw WrongResponseFormat("Response does not contain 'event' map.");
-    }
-    if (eventMap is! Map<String, dynamic>) {
-      throw WrongResponseFormat("Response 'event' is not a map.");
-    }
-    if (eventMap['request_id'] == null) {
-      throw WrongResponseFormat(
-          "Response 'event' map does not contain 'request_id' key.");
-    }
-    return eventMap;
-  }
-
-  static dynamic _processPayload(
-      String payloadType, Map<String, dynamic> payloadData) {
-    try {
-      if (payloadType.startsWith('Timeseries')) {
-        return Timeseries.fromJson(
-            {payloadData.keys.first: payloadData.values.first});
-      } else if (payloadType.startsWith('AggregateWalletIntegrations')) {
-        return WalletIntegrations.fromJson(payloadData);
-      } else if (payloadType.startsWith('NFTItem')) {
-        return WalletNFTs.fromJson(payloadData);
-      } else if (payloadType.startsWith('AggregateWalletTokens')) {
-        return WalletTokens.fromJson(payloadData);
+  void _handleWebSocketClosure(Map<String, dynamic> event) {
+    for (final requestID in messageFutures.keys) {
+      for (final messageFuture in messageFutures[requestID]!) {
+        if (event.containsKey('reason')) {
+          if (event['code'] == 1000) {
+            messageFuture.setResult(WEBSOCKET_ABORTED_MESSAGE);
+          } else {
+            messageFuture.setException(APIError(
+                message: "WebSocket closed: ${event['reason']}",
+                statusCode: event['code']));
+          }
+        } else if (event.containsKey('message')) {
+          messageFuture.setException(APIError(
+              message: "Websocket error: ${event['message']}",
+              statusCode: 500));
+        } else {
+          messageFuture.setException(APIError(
+              message: "Websocket closed unexpectedly.", statusCode: 500));
+        }
       }
-    } catch (e) {
-      throw SerializationError(
-          'An error occurred during serialization: $e\n Serializing $payloadType.');
     }
-
-    throw SerializationError(
-        'No serializer found for payload type $payloadType');
   }
 
   void _performCleanup(String requestId) {
     _cleanupRequst(requestId);
 
-    if (messageFutures.isEmpty && callbackHandler.isEmpty) {
+    if (messageFutures.isEmpty && callbackHandlers.isEmpty) {
       Future.delayed(Duration(seconds: 1), () async {
-        await transitionToClosed();
+        await transitionToClose();
       });
     }
   }
 
   void _cleanupRequst(String requestId) {
-    if (callbackHandler.containsKey(requestId)) {
-      callbackHandler.remove(requestId);
+    if (callbackHandlers.containsKey(requestId)) {
+      callbackHandlers.remove(requestId);
     }
     if (messageFutures.containsKey(requestId)) {
       messageFutures.remove(requestId);

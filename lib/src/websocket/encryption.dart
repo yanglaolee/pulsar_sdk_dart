@@ -3,9 +3,7 @@ import 'dart:convert';
 import 'package:encrypt/encrypt.dart';
 import 'package:pointycastle/export.dart';
 
-// final publicKey = parseKeyFromFileSync<RSAPublicKey>('public_key.pem');
-
-final pem = '''
+const pem = '''
 -----BEGIN PUBLIC KEY-----
 MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA2ykDfyQtt4vQAJg7td4K
 2KPqa5TkpQ1Xtk4/egymDjQsnicm1kZfeFVsrgDB60fdW0amR+O4fMj+2gcH1eRD
@@ -25,7 +23,7 @@ Gse4ls8k+SNowhPJ1YT6+IkCAwEAAQ==
 final pubKey =  RSAKeyParser().parse(pem) as RSAPublicKey;
 
 String encryptMessage(String message) {
-  final encryptor = OAEPEncoding(RSAEngine())
+  final encryptor = OAEPEncoding.withSHA256(RSAEngine())
     ..init(true, PublicKeyParameter<RSAPublicKey>(pubKey));
 
   final messageBytes = utf8.encode(message);

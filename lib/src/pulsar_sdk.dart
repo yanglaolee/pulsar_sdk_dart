@@ -1,5 +1,7 @@
 // ignore_for_file: non_constant_identifier_names
 
+import 'package:logger/logger.dart';
+
 import 'rest/nfts.dart';
 import 'rest/tokens.dart';
 import 'rest/wallets.dart';
@@ -29,10 +31,12 @@ class PulsarSDK {
     required this.balances,
   });
 
-  factory PulsarSDK({required String apiKey, String? baseUrl, bool useSSL = true}) {
+  factory PulsarSDK({required String apiKey, String? baseUrl, bool useSSL = true, bool useLog = false}) {
       final url = baseUrl ?? 'qa-api.pulsar.finance';
       final protocol = useSSL ? 'https' : 'http';
       final wsProtocol = useSSL ? 'wss' : 'ws';
+
+      final logger = useLog ? Logger() : null;
 
       final restUrl = '$protocol://$url/v1/thirdparty';
       final wsUrl = '$wsProtocol://$url/v1/thirdparty/ws';
@@ -54,7 +58,7 @@ class PulsarSDK {
         nameService: NameServiceRestClient(baseUrl: restUrl, headers: headers),
 
         // Websocket Clients
-        balances: WalletBalancesClient(baseUrl: wsUrl, apiKey: apiKey),
+        balances: WalletBalancesClient(baseUrl: wsUrl, apiKey: apiKey, logger: logger),
       );
     }
 

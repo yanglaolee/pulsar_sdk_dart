@@ -1,4 +1,5 @@
 import 'package:uuid/uuid.dart';
+import 'package:logger/logger.dart';
 
 import 'types.dart';
 import 'base.dart';
@@ -11,11 +12,14 @@ class WalletBalancesClient {
   WalletBalancesClient({
     required String apiKey,
     required String baseUrl,
+    Logger? logger,
   }) : _wsClient = WebSocketClient(
           apiKey: apiKey,
           baseUrl: baseUrl,
+          logger: logger,
         );
 
+  // dynamic value can be WalletIntegrations | WalletNFTs | WalletTokens | null
   Stream<dynamic> getWalletBalances({
     required String walletAddr,
     required ChainKeys chain,
@@ -34,12 +38,11 @@ class WalletBalancesClient {
 
     await for (final response
         in _wsClient.handleResponse(requestId, msg, finishedEventType)) {
-      // print(response);
       yield response;
     }
   }
 
-  Stream<dynamic> getWalletTimeseries({
+  Stream<Timeseries> getWalletTimeseries({
     required String walletAddr,
     required ChainKeys chain,
     required TierKeys tier,
@@ -58,8 +61,7 @@ class WalletBalancesClient {
 
     await for (final response
         in _wsClient.handleResponse(requestId, msg, finishedEventType)) {
-      // print(response);
-      yield response;
+      yield response as Timeseries;
     }
   }
 }

@@ -6,7 +6,7 @@ import 'package:pulsar_sdk_dart/pulsar_sdk_dart.dart';
 void main() {
   final apiKey = File('test/test_api_key.txt').readAsStringSync();
 
-  final client = PulsarSDK(apiKey: apiKey).balances;
+  final client = PulsarSDK(apiKey: apiKey,useLog: true).balances;
 
   group('wallet balances websocket client', () {
     
@@ -17,7 +17,19 @@ void main() {
       );
 
       await for (final balance in balances) {
-        print(balance);
+        print(balance.runtimeType);
+      }
+    });
+
+    test('getWalletTimeseries', () async {
+      final balances = client.getWalletTimeseries(
+        walletAddr: 'kujira1zspr6va4ev78lpsh48s57nv6szxj4cdywt2kkg',
+        chain: ChainKeys.KUJIRA,
+        tier: TierKeys.ONE_DAY,
+      );
+
+      await for (final balance in balances) {
+        print(balance.runtimeType);
       }
     });
   });
